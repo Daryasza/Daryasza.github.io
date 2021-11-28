@@ -542,7 +542,7 @@ footer {
   min-height: 58px;
   border-radius: 3px;
   padding: 18px 11px;
-  border: transparent;
+  border: 3px solid transparent;
 }
 .inputs__form:focus {
   border: 3px solid #CA1B36;
