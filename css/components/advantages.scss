@@ -1,0 +1,14 @@
+.advantages, .advantages__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.advantages__icon {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.advantages__text {
+  max-width: 114px;
+}

@@ -1,0 +1,16 @@
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts__img {
+  margin-right: 7px;
+  width: 14px;
+  height: 14px;
+}
+
+.contacts__phone {
+  font-style: normal;
+}
+

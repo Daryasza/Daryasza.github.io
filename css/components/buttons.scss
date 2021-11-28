@@ -1,0 +1,39 @@
+.btn {
+  padding: 17px 41px;
+  display: inline-block;
+  color: #fff;
+  transition: .3s;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.btn--color--red {
+  background-color: $red;
+  
+  &:hover {
+    background-color: #fff;
+    color: $red;
+  }
+}
+
+.btn--color--bred {
+  background-color: $bred;
+  padding: 21px 41px;
+
+  &:hover {
+    background-color: #fff;
+    color: $bred;
+  }
+}
+
+.btn--color--transpar {
+  background-color: transparent;
+  text-transform: none;
+  font-weight: 400;
+  padding: 17px 20px;
+
+  &:hover {
+    color: $red;
+  }
+}

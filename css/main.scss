@@ -1,0 +1,32 @@
+//main
+$containerWidth: 914px;
+
+//colors
+$grey: #F5F5F5;
+$dgrey: #868686;
+$red: #E01F3D;
+$bred:#CA1B36;
+
+//normalize 
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+//setups
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700&family=Play:wght@400;700&display=swap');
+@import "layout.scss";
+
+//components
+@import "components/hero.scss" ;
+@import "components/header.scss";
+@import "components/nav.scss";
+@import "components/contacts.scss";
+@import "components/advantages.scss";
+@import "components/buttons.scss";
+@import "components/section.scss";
+@import "components/heading.scss";
+@import "components/benefits.scss";
+@import "components/reviews.scss";
+@import "components/interactive-avatar.scss";
+@import "components/form.scss";
+@import "components/inputs.scss";
+@import "components/radio.scss";
+@import "components/sidebar.scss";

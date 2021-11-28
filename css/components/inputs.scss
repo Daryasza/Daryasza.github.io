@@ -1,0 +1,60 @@
+.inputs {
+  display: flex;
+  margin-bottom: 42px;
+}
+
+.inputs__col {
+  flex: 1;
+  margin-right: 28px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.inputs__row {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.inputs__block {
+  flex: 1;
+  margin-right: 13px;
+
+  &:last-child {
+    margin-right: 0;
+
+  }
+
+}
+
+.inputs__form {
+  width: 100%;
+  min-height: 58px;
+  border-radius: 3px;
+  padding: 18px 11px;
+  border: transparent;
+
+  &:focus {
+    border: 3px solid $bred;
+    outline: none;
+  }
+
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+  overflow: scroll;
+  margin-bottom: 25px;
+}
+
+.inputs__controls {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

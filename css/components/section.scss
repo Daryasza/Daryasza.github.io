@@ -1,0 +1,49 @@
+.section {
+  height: 100vh;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #666666;
+  position: relative;
+
+  &--form {
+    background-color: #181818;
+    color: #fff;
+
+    .heading--form--title {
+      color: inherit;
+    }
+  }
+}
+
+.section--benefits {
+  
+  &::before {
+    content: url(../../img/add_icons/separator2-3.svg);
+    position: absolute;
+    bottom: -19px;
+    left: 15%;
+  }
+}
+
+.section--reviwes {
+
+  &::before{
+    content: url(../../img/add_icons/separator6-7.svg);
+    bottom: -25px;
+    left: 18%;
+    position: absolute;
+  
+  }
+}
+
+.section--form {
+
+  &::before {
+    content: url("../../img/add_icons/separator7-8.svg");
+    position: absolute;
+    right: 19.3%;
+    top: -23px;
+  }
+}
