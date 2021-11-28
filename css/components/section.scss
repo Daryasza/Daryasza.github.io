@@ -40,6 +40,7 @@
 
 .section--form {
   background: url(../img/form-section-bg.png) center center no-repeat;
+  background-size: cover;
 
   &::before {
     content: url("../img/add_icons/separator7-8.svg");
