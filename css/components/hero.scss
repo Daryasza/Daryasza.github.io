@@ -5,7 +5,7 @@
   position: relative;
 
   &::before {
-    content: url(../../img/add_icons/separator1-2.svg);
+    content: url(../img/add_icons/separator1-2.svg);
     position: absolute;
     bottom: -27px;
     right: 20%;
@@ -14,7 +14,7 @@
 }
 
 .hero__container {
-  background: url("../../img/big_beats/beats_hellosect.png") right center /54% auto no-repeat;
+  background: url("../img/big_beats/beats_hellosect.png") right center /54% auto no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -93,14 +93,14 @@ footer {
   position: relative;
 }
 .hero::before {
-  content: url(../../img/add_icons/separator1-2.svg);
+  content: url(../img/add_icons/separator1-2.svg);
   position: absolute;
   bottom: -27px;
   right: 20%;
 }
 
 .hero__container {
-  background: url("../../img/big_beats/beats_hellosect.png") right center/54% auto no-repeat;
+  background: url("../img/big_beats/beats_hellosect.png") right center/54% auto no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,21 +267,21 @@ footer {
 }
 
 .section--benefits::before {
-  content: url(../../img/add_icons/separator2-3.svg);
+  content: url(../img/add_icons/separator2-3.svg);
   position: absolute;
   bottom: -19px;
   left: 15%;
 }
 
 .section--reviwes::before {
-  content: url(../../img/add_icons/separator6-7.svg);
+  content: url(../img/add_icons/separator6-7.svg);
   bottom: -25px;
   left: 18%;
   position: absolute;
 }
 
 .section--form::before {
-  content: url("../../img/add_icons/separator7-8.svg");
+  content: url("../img/add_icons/separator7-8.svg");
   position: absolute;
   right: 19.3%;
   top: -23px;
@@ -327,7 +327,7 @@ footer {
 }
 .benefits__item::before {
   position: absolute;
-  content: url("../../img/benefit__icons/benefit-separator.svg");
+  content: url("../img/benefit__icons/benefit-separator.svg");
   top: 58px;
   right: 0;
   -webkit-transform: translateX(50%);
@@ -584,7 +584,7 @@ textarea {
   border-radius: 5px;
 }
 .radio--checkbox .radio__visible::before {
-  background: url("../../img/add_icons/checkmark.svg") center center no-repeat;
+  background: url("../img/add_icons/checkmark.svg") center center no-repeat;
 }
 
 .radio__elem {
