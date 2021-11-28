@@ -21,6 +21,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  display: inline-block;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -236,7 +240,7 @@ footer {
   background-color: transparent;
   text-transform: none;
   font-weight: 400;
-  padding: 17px 20px;
+  padding: 17px 10px;
 }
 .btn--color--transpar:hover {
   color: #E01F3D;
@@ -495,20 +499,10 @@ footer {
      object-fit: cover;
 }
 
-.form {
-  position: relative;
-}
-
-.form__buttons {
-  position: absolute;
-  left: 50%;
-}
-
 .inputs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 42px;
 }
 
 .inputs__col {
@@ -567,6 +561,10 @@ textarea {
 }
 .inputs__controls:last-child {
   margin-bottom: 0;
+}
+
+.inputs__buttons {
+  margin-top: 40px;
 }
 
 .radio {

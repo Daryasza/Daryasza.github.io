@@ -1,6 +1,5 @@
 .inputs {
   display: flex;
-  margin-bottom: 42px;
 }
 
 .inputs__col {
@@ -57,4 +56,8 @@ textarea {
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.inputs__buttons {
+  margin-top: 40px;
 }
