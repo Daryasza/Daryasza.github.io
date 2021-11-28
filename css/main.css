@@ -148,6 +148,10 @@ footer {
   font-size: 18px;
 }
 
+.logo {
+  display: block;
+}
+
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
