@@ -280,6 +280,9 @@ footer {
   position: absolute;
 }
 
+.section--form {
+  background: url(../img/form-section-bg.png) center center no-repeat;
+}
 .section--form::before {
   content: url("../img/add_icons/separator7-8.svg");
   position: absolute;
