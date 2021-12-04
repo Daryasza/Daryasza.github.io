@@ -2,6 +2,12 @@
   text-align: center;
 }
 
+.heading__title {
+  @include mobile {
+    font-size: 32px;
+  }
+}
+
 .heading--benefits {
   margin-bottom: convert(63px);
 }
@@ -25,4 +31,9 @@
   @include tablet {
     padding: 0 17%;
   }
+
+  @include mobile {
+    padding: 0 10%;
+  }
+
 }

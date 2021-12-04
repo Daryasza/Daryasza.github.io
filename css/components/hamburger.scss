@@ -1,10 +1,10 @@
 .hamburger {
   cursor: pointer;
+  height: 25px;
+  display: block;
 }
 
 .hamburger__menu {
-  width: 30px;
-  height: 20px;
   display: none;
 
   @include tablet {
@@ -14,8 +14,8 @@
 .hamburger__plank {
   display: block;
   background: #292929;
-  height: 4px;
   width: 27px;
+  height: 4px;
   border-radius: 5px;  
   position: relative;
 
@@ -30,7 +30,7 @@
     display: block;
   }
   &::before {
-    top: -10px;
+    top: 20px;
   }
   &::after {
     top: 10px;

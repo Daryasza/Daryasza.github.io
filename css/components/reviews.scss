@@ -1,3 +1,10 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+
 .reviews-display {
   margin-bottom: convert(15px);
   position: relative;
@@ -16,6 +23,10 @@
 
     @include tablet {
       left: 45%;
+    }
+
+    @include mobile {
+      display: none;
     }
 
   }

@@ -102,6 +102,7 @@ footer {
   font-size: 3rem;
   text-transform: uppercase;
   color: #292929;
+  line-height: 3rem;
 }
 
 .hero {
@@ -115,6 +116,12 @@ footer {
   position: absolute;
   bottom: -1.6875rem;
   right: 20%;
+}
+@media screen and (max-width: 768px) {
+  .hero::before {
+    right: 10.5%;
+    bottom: -26px;
+  }
 }
 
 .hero__container {
@@ -183,13 +190,17 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
+  .hero__title-section .hero__btn {
+    padding: 20px 43px;
+    font-size: 16px;
+  }
   .hero__title-section::before {
     content: "";
     background: url(../img/big_beats/beats_hellosect.png) center center no-repeat;
     background-size: contain;
-    width: 20.1875rem;
-    height: 20.1875rem;
-    margin-bottom: 1.25rem;
+    width: 23.1875rem;
+    height: 23.1875rem;
+    margin-bottom: 63px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -225,8 +236,10 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .hero__title {
-    max-width: 100%;
+    max-width: 91%;
     text-align: center;
+    font-size: 48px;
+    margin-bottom: 6px;
   }
 }
 
@@ -239,6 +252,9 @@ footer {
   .hero__subtitle {
     max-width: 49%;
     text-align: center;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -276,9 +292,9 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .header {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -375,11 +391,11 @@ footer {
 
 .hamburger {
   cursor: pointer;
+  height: 25px;
+  display: block;
 }
 
 .hamburger__menu {
-  width: 30px;
-  height: 20px;
   display: none;
 }
 @media screen and (max-width: 768px) {
@@ -391,8 +407,8 @@ footer {
 .hamburger__plank {
   display: block;
   background: #292929;
-  height: 4px;
   width: 27px;
+  height: 4px;
   border-radius: 5px;
   position: relative;
 }
@@ -407,7 +423,7 @@ footer {
   display: block;
 }
 .hamburger__plank::before {
-  top: -10px;
+  top: 20px;
 }
 .hamburger__plank::after {
   top: 10px;
@@ -531,6 +547,12 @@ footer {
   text-align: center;
 }
 
+@media screen and (max-width: 480px) {
+  .heading__title {
+    font-size: 32px;
+  }
+}
+
 .heading--benefits {
   margin-bottom: 3.9375rem;
 }
@@ -556,11 +578,24 @@ footer {
     padding: 0 17%;
   }
 }
+@media screen and (max-width: 480px) {
+  .heading__text {
+    padding: 0 10%;
+  }
+}
 
 .benefits {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 480px) {
+  .benefits {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .benefits__item {
@@ -569,6 +604,27 @@ footer {
           flex: 1;
   padding: 0 3%;
   position: relative;
+}
+@media screen and (max-width: 480px) {
+  .benefits__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  .benefits__item .benefit__text {
+    text-align: start;
+    max-width: 60%;
+  }
+  .benefits__item .benefit__img {
+    margin-right: 20px;
+  }
+  .benefits__item::before {
+    display: none;
+  }
 }
 .benefits__item::before {
   position: absolute;
@@ -627,6 +683,20 @@ footer {
   line-height: 1.2;
 }
 
+.reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 100%;
+}
+
 .reviews-display {
   margin-bottom: 0.9375rem;
   position: relative;
@@ -646,6 +716,11 @@ footer {
 @media screen and (max-width: 768px) {
   .reviews-display::before {
     left: 45%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews-display::before {
+    display: none;
   }
 }
 
