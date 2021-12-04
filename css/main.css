@@ -949,7 +949,13 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .inputs__row {
-    margin-bottom: 2px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .inputs__row--textarea {
+    margin-bottom: -5px;
   }
 }
 
@@ -972,7 +978,8 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .inputs__form {
-    height: 10px;
+    height: 36px;
+    padding: 4px 8px;
   }
 }
 .inputs__form:focus {
@@ -1018,7 +1025,12 @@ textarea {
 }
 
 .inputs__buttons {
-  margin-top: 2.5rem;
+  margin-top: 35px;
+}
+@media screen and (max-width: 768px) {
+  .inputs__buttons .btn--color--bred {
+    margin-right: 15px;
+  }
 }
 @media screen and (max-width: 768px) {
   .inputs__buttons {
@@ -1028,6 +1040,12 @@ textarea {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .inputs__button--active {
+    color: #E01F3D;
   }
 }
 

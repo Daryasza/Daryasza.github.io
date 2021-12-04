@@ -26,7 +26,14 @@
   margin-bottom: convert(15px);
 
   @include tablet {
-    margin-bottom: 2px;
+    margin-bottom: 15px;
+  }
+}
+
+.inputs__row--textarea {
+
+  @include tablet {
+    margin-bottom: -5px;
   }
 }
 
@@ -48,7 +55,9 @@
   border: convert(3px) solid transparent;
 
   @include tablet {
-    height: 10px;
+    height: 36px;
+    padding: 4px 8px;
+    
   }
 
   &:focus {
@@ -102,10 +111,27 @@ textarea {
 }
 
 .inputs__buttons {
-  margin-top: convert(40px);
+  margin-top: 35px;
+
+  .btn--color--bred {
+
+    @include tablet {
+      margin-right: 15px;
+    }
+  }
 
   @include tablet {
     display: flex;
     justify-content: center;
   }
 }
+
+
+
+.inputs__button--active {
+  @include tablet {
+
+    color: $red;
+  }
+}
+
