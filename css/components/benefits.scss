@@ -1,11 +1,8 @@
 .benefits {
   display: flex;
 
-
   @include mobile {
     flex-direction: column;
-
-
   }
 }
 
@@ -26,21 +23,21 @@
     display: flex;
     align-items: center;
     padding: 0;
+    margin-bottom: 20px;
 
     .benefit__text {
       text-align: start;
-      max-width: 60%;
+      max-width: 65%;
     }
 
     .benefit__img {
       margin-right: 20px;
+
     }
     &::before {
       display: none;
     }
-
   }
-
 
   &::before {
     position: absolute;
@@ -83,6 +80,13 @@
   border-radius: 50%;
   overflow: hidden;
   background: #F2F5F4;
+
+  @include mobile {
+    width: 130px;
+    height: 130px;
+
+  }
+
 }
 
 .benefit__icon {
@@ -103,8 +107,16 @@
   @include tablet {
     font-size: 24px;
   }
+
+  @include mobile {
+    margin-bottom: 10px;
+  }
 }
 
 .benefit__desc {
   line-height: 1.2;
+
+  @include mobile {
+    font-size: 16px;
+  }
 }

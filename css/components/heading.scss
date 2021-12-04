@@ -4,17 +4,49 @@
 
 .heading__title {
 
+  @include tablet {
+    font-size: 48px;
+  }
+
   @include mobile {
     font-size: 32px;
   }
 
-  @include tablet {
-    font-size: 48px;
-  }
 }
 
 .heading--benefits {
   margin-bottom: convert(63px);
+
+  @include mobile {
+    margin-bottom: 45px;
+  }
+}
+
+.heading--benefits--title {
+  margin-bottom: convert(10px);
+
+  @include tablet {
+    margin-bottom: 15px;
+  }
+
+  @include mobile {
+    margin-bottom: 10px;
+  }
+}
+
+.heading__text {
+  padding: 0 22%;
+  line-height: 1.2;
+  
+  @include tablet {
+    padding: 0 15%;
+    font-size: 16px;
+  }
+
+  @include mobile {
+    padding: 0 2%;
+  }
+
 }
 
 .heading--reviews {
@@ -31,27 +63,4 @@
   @include tablet {
     margin-bottom: 37px;
   }
-}
-
-.heading--benefits--title {
-  margin-bottom: convert(10px);
-
-  @include tablet {
-    margin-bottom: 15px;
-  }
-}
-
-.heading__text {
-  padding: 0 22%;
-  line-height: 1.2;
-  
-  @include tablet {
-    padding: 0 15%;
-    font-size: 16px;
-  }
-
-  @include mobile {
-    padding: 0 10%;
-  }
-
 }

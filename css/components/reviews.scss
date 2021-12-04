@@ -10,6 +10,12 @@
   position: relative;
   overflow: hidden;
 
+  @include mobile {
+    margin-bottom: 38px;
+  }
+
+
+
   &::before {
     content: "";
     position: absolute;
@@ -56,6 +62,12 @@
     height: convert(130px);
     margin-bottom: 30px;
   }
+
+  @include mobile {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 25px;
+  }
 }
 
 .review__img {
@@ -89,6 +101,11 @@
 
 .review__text {
   margin-bottom: convert(32px);
+
+  @include mobile {
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
 }
 
 

@@ -5,10 +5,17 @@
   left: 0;
   right: 0;
   padding: convert(23px) 0;
+
 }
 
 .footer__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }

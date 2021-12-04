@@ -5,6 +5,15 @@
   @include tablet {
     color: $red;
   }
+
+  @include mobile {
+    color: black;
+  }
+}
+
+.phone--footer {
+  display: flex;
+  justify-content: center;
 }
 
 .phone__icon {
@@ -16,7 +25,10 @@
 
   @include tablet {
     fill: $red;
+  }
 
+  @include mobile {
+    fill: black;
   }
 }
 
@@ -26,6 +38,10 @@
 
   @include tablet {
     font-size: 18px;
+  }
+
+  @include mobile {
+    font-size: 16px;
   }
 }
 

@@ -11,16 +11,26 @@
 }
 
 .contacts--footer {
-  @include tablet {
-    padding-left: 45px;
+  
+  @include mobile {
+    padding-left: 10px;
+    margin-bottom: 15px;
   }
+
 }
 
 .contacts__address {
   font-style: normal;
+  flex-wrap: nowrap;
+  display: flex;
 
   @include tablet {
     font-size: 21px;
+  }
+
+  @include mobile {
+    font-size: 18px;
+    margin-bottom: 13px;
   }
 
 }

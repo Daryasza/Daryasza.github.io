@@ -15,6 +15,11 @@
       bottom: -26px;
     }
 
+    @include mobile {
+      right: 11%;
+      bottom: -17px;
+    }
+
   }
 }
 
@@ -71,13 +76,18 @@
     justify-content: center;
     align-items: center;
 
+    .hero__btn {
+      padding: 20px 37px; 
+      font-size: 19px;
+    }
+
     &::before {
       content: "";
       background: url(../img/big_beats/beats_hellosect.png) center center no-repeat;
       background-size: contain;
-      width: convert(323px);
-      height: convert(323px);
-      margin-bottom: convert(20px);
+      width: 323px;
+      height: 323px;
+      margin-bottom: 48px;
     }
   }
 }
@@ -92,6 +102,13 @@
     text-align: center;
     font-size: 48px;
     margin-bottom: 6px;
+  }
+
+  @include mobile {
+    max-width: 83%; 
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 14px;
   }
 }
 
@@ -109,8 +126,10 @@
   }
 
   @include mobile {
-    max-width: 64%; 
+    max-width: 69%; 
     text-align: center; 
+    line-height: 1.2;
+    margin-bottom: 25px;
   }
 }
 

@@ -54,7 +54,15 @@
     position: absolute;
     right: 19.3%;
     top: convert(-23px);
+
+    @include mobile {
+      right: 9%;
+    }
+
+
   }
+
+
 }
 
 .section--contacts {

@@ -19,6 +19,11 @@
     margin-right: 5px;
 
   }
+
+  @include mobile {
+    padding: 0 1%;
+
+  }
 }
 
 .inputs__row {
@@ -105,9 +110,16 @@ textarea {
 
   }
 
+  @include mobile {
+    justify-content: center;
+
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
+
+
 }
 
 .inputs__buttons {

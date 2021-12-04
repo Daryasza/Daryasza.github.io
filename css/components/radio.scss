@@ -4,6 +4,15 @@
   user-select: none;
   margin-right: convert(10px);
 
+  @include tablet {
+    margin-bottom: 10px;
+  }
+
+  @include mobile {
+    margin-right: 20px;
+
+  }
+
   &:last-child {
     margin-right: 0;
   }
