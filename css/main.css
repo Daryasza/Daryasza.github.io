@@ -185,7 +185,7 @@ footer {
   }
   .hero__title-section::before {
     content: "";
-    background: url(../../img/big_beats/beats_hellosect.png) center center no-repeat;
+    background: url(../img/big_beats/beats_hellosect.png) center center no-repeat;
     background-size: contain;
     width: 20.1875rem;
     height: 20.1875rem;
@@ -210,7 +210,7 @@ footer {
   }
   .hero__title-section::before {
     content: "";
-    background: url(../../img/big_beats/beats_hellosect.png) center center no-repeat;
+    background: url(../img/big_beats/beats_hellosect.png) center center no-repeat;
     background-size: contain;
     width: 20.1875rem;
     height: 20.1875rem;
