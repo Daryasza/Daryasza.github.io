@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-  <meta name="viewport" content="width=1000">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/main.css">
   <title>Beats Solo 3</title>
 </head>
@@ -14,7 +14,7 @@
         <div class="container hero__container">
             <header class="header">
               <a href="#" class="header__logo logo"><img class="logo__link" src="../img/logo.svg" alt=" beats logo"></a>
-              <nav class="nav">
+              <nav class="header__nav nav">
                 <ul class="nav__list">
                   <li class="nav__item">
                     <a href="#" class="nav__link">О нас</a>
@@ -39,10 +39,18 @@
                   </li>
                 </ul>
               </nav>
-              <address class="contacts">
-                <img src="../img/add_icons/phone.svg" alt="phone" class="contacts__img">
-                <a href="tel:+7 800 903 90 90" class="contacts__phone">8 800 903 90 90</a>
+              <address class="contacts contacts--header">
+                <div class= "phone phone--header">
+                  <svg class="phone__icon"><use xlink:href="../img/socials.svg#phone"></use></svg>
+                  <a href="tel:+7 800 903 90 90" class="phone__number">8 800 903 90 90</a>
+                </div>
               </address>
+              <div class="hamburger">
+                <a class="hamburger__menu">
+                  <div class="hamburger__plank"></div>
+                </a>
+              </div>
+              
             </header>
             <div class="hero__title-section">
               <h1 class="hero__title title">Беспроводные наушники Beats Solo 3</h1>
@@ -227,6 +235,46 @@
             </div>
           </form>
         </div>
+      </section>
+      <section class="section section--contacts">
+        <div class="map"></div>
+        <footer class="footer">
+          <div class="container footer__container">
+            <address class="contacts contacts--footer">
+              <div class="contacts__address">Москва, ул.Новый Арбат, д.31/12</div>
+              <div class="phone phone--footer">
+                <svg class="phone__icon"><use xlink:href="../img/socials.svg#phone"></use></svg>
+                <a href="tel:+7 800 903 90 90" class="phone__number">8 800 903 90 90</a>
+              </div>
+            </address>
+            <ul class="socials">
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg class="socials__img">
+                    <use xlink:href="../img/socials.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link socials__link--active">
+                  <svg class="socials__img"><use xlink:href="../img/socials.svg#fb"></use></svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg class="socials__img"><use xlink:href="../img/socials.svg#in"></use></svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg class="socials__img"><use xlink:href="../img/socials.svg#tg"></use></svg>
+                </a>
+              </li>
+              
+              
+            </ul> 
+          </div>
+        </footer> 
       </section>
     </div>
   </div>

@@ -1,6 +1,21 @@
 .header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  font-size: 18px;
+  font-size: convert(18px);
+
+  @include tablet {
+    align-items: flex-end;
+  }
+}
+
+.header__nav {
+  margin: 10px 30px 0;
+  @include tablet {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
 }

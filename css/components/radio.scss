@@ -2,7 +2,7 @@
   display: flex;
   cursor: pointer;
   user-select: none;
-  margin-right: 10px;
+  margin-right: convert(10px);
 
   &:last-child {
     margin-right: 0;
@@ -10,7 +10,7 @@
 
   &--checkbox {
     .radio__visible {
-      border-radius: 5px;
+      border-radius: convert(5px);
 
       &::before {
         background: url("../img/add_icons/checkmark.svg") center center no-repeat;
@@ -31,18 +31,18 @@
 }
 
 .radio__visible {
-  width: 26px;
-  height: 26px;
+  width: convert(26px);
+  height: convert(26px);
   border-radius: 50%;
   position: relative;
   background-color: #fff;
-  margin-right: 10px;
+  margin-right: convert(10px);
 
 
   &::before {
     content: "";
-    width: 14px;
-    height: 14px;
+    width: convert(14px);
+    height: convert(14px);
     background: $red;
     border-radius: 50%;
     position: absolute;

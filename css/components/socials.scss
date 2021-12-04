@@ -1,0 +1,30 @@
+.socials__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.socials__link {
+
+  &--active {
+  .socials__img {
+    fill: black;
+  }
+  }
+}
+
+.socials__img {
+  fill: #B3B3B3;
+  width: 30px;
+  height: 30px;
+  display: block;
+
+  &:hover {
+    fill: black;
+  }
+}
+

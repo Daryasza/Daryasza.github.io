@@ -1,0 +1,27 @@
+.phone {
+  display: flex;
+  align-items: center;
+
+  @include tablet {
+    color: $red;
+  }
+}
+
+.phone__icon {
+  margin-right: convert(7px);
+  width: convert(16px);
+  height: convert(16px);
+  min-height: 100%;
+  display: block;
+
+  @include tablet {
+    fill: $red;
+
+  }
+}
+
+.phone__number {
+  font-style: normal;
+  display: inline-block;
+}
+

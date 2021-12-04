@@ -1,11 +1,18 @@
 .sidebar {
   position: fixed;
   top: 40%;
-  right: 5%;
+  right: 3%;
+
+  @include tablet {
+    display: none;
+  }
+  @include mobile {
+    display: none;
+  }
 }
 
 .sidebar__item {
-  margin-bottom: 5px;
+  margin-bottom: convert(5px);
 
   &--active {
 
@@ -21,17 +28,17 @@
 
 .sidebar__link {
   border-radius: 50%;
-  width: 16px;
-  height: 16px;
-  border: 1px solid transparent;
+  width: convert(16px);
+  height: convert(16px);
+  border: convert(1px) solid transparent;
   display: block;
   position: relative;
 
   &::before {
     content: "";
     border-radius: 50%;
-    height: 6px;
-    width: 6px;
+    height: convert(6px);
+    width: convert(6px);
     background-color: $dgrey;
     display: block;
     position: absolute;

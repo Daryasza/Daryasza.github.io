@@ -11,7 +11,7 @@
   &::before {
     position: absolute;
     content: url("../img/benefit__icons/benefit-separator.svg");
-    top: 58px;
+    top: convert(58px);
     right: 0;
     transform: translateX(50%);
   }
@@ -34,13 +34,13 @@
 }
 
 .benefit__img {
-  margin-bottom: 15px;
+  margin-bottom: convert(15px);
 }
 
 .benefit__img--wrapper {
   display: inline-block;
-  width: 126px;
-  height: 126px;
+  width: convert(126px);
+  height: convert(126px);
   position: relative;
   border-radius: 50%;
   overflow: hidden;
@@ -48,8 +48,8 @@
 }
 
 .benefit__icon {
-  width: 60px;
-  height: 60px;
+  width: convert(60px);
+  height: convert(60px);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -58,9 +58,9 @@
 
 .benefit__title {
   font-weight: 700;
-  font-size: 24px;
+  font-size: convert(24px);
   color: #292929;
-  margin-bottom: 5px;
+  margin-bottom: convert(5px);
 }
 
 .benefit__desc {

@@ -1,6 +1,6 @@
 .section {
   height: 100vh;
-  min-height: 650px;
+  min-height: convert(650px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,7 +22,7 @@
   &::before {
     content: url(../img/add_icons/separator2-3.svg);
     position: absolute;
-    bottom: -19px;
+    bottom: convert(-19px);
     left: 15%;
   }
 }
@@ -31,7 +31,7 @@
 
   &::before{
     content: url(../img/add_icons/separator6-7.svg);
-    bottom: -25px;
+    bottom: convert(-25px);
     left: 18%;
     position: absolute;
   
@@ -46,6 +46,13 @@
     content: url("../img/add_icons/separator7-8.svg");
     position: absolute;
     right: 19.3%;
-    top: -23px;
+    top: convert(-23px);
   }
+}
+
+.section--contacts {
+  height: 100vh;
+  min-height: convert(650px);
+  position: relative;
+
 }

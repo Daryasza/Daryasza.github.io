@@ -1,39 +1,111 @@
 .hero {
   background-color: $grey;
   height: 100vh;
-  min-height: 650px;
+  min-height: convert(650px);
   position: relative;
 
   &::before {
     content: url(../img/add_icons/separator1-2.svg);
     position: absolute;
-    bottom: -27px;
+    bottom: convert(-27px);
     right: 20%;
 
   }
 }
 
 .hero__container {
-  background: url("../img/big_beats/beats_hellosect.png") right center /54% auto no-repeat;
+  background: url("../img/big_beats/beats_hellosect.png") right center /52% auto no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 25px 0 45px;
+  padding: convert(25px) 0 convert(45px);
+
+  @include tablet {
+    background: none;
+    justify-content: flex-start;
+  }
+  @include mobile {
+    background: none;
+    justify-content: flex-start;
+
+  }
+}
+
+.hero__title-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @include tablet {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+      content: "";
+      background: url(../../img/big_beats/beats_hellosect.png) center center no-repeat;
+      background-size: contain;
+      width: convert(323px);
+      height: convert(323px);
+      margin-bottom: convert(20px);
+    }
+  }
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+      content: "";
+      background: url(../../img/big_beats/beats_hellosect.png) center center no-repeat;
+      background-size: contain;
+      width: convert(323px);
+      height: convert(323px);
+      margin-bottom: convert(20px);
+    }
+  }
 }
 
 .hero__title {
-  max-width: 40%;
+  max-width: 44%;
   line-height: 1.1;
-  margin-bottom: 20px;
+  margin-bottom: convert(20px);
+
+  @include tablet {
+    max-width: 100%; 
+    text-align: center; 
+  }
 }
 
 .hero__subtitle {
   max-width: 36%;
-  font-size: 18px;
-  margin-bottom: 35px;
+  font-size: convert(18px);
+  margin-bottom: convert(35px);
+
+  @include tablet {
+    max-width: 49%; 
+    text-align: center; 
+  }
+
+  @include mobile {
+    max-width: 64%; 
+    text-align: center; 
+  }
 }
 
 .hero__content-section {
   max-width: 56%;
+
+  @include tablet {
+    display: none;
+  }
+  @include mobile {
+    display: none;
+  }
 }

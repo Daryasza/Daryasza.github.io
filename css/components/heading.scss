@@ -3,22 +3,26 @@
 }
 
 .heading--benefits {
-  margin-bottom: 63px;
+  margin-bottom: convert(63px);
 }
 
 .heading--reviews {
-  margin-bottom: 23px;
+  margin-bottom: convert(23px);
 }
 
 .heading--form {
-  margin-bottom: 50px;
+  margin-bottom: convert(50px);
 }
 
 .heading--benefits--title {
-  margin-bottom: 10px;
+  margin-bottom: convert(10px);
 }
 
 .heading__text {
   padding: 0 22%;
   line-height: 1.2;
+  
+  @include tablet {
+    padding: 0 17%;
+  }
 }

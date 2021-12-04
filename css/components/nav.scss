@@ -1,11 +1,15 @@
 .nav__list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
+
 }
 
 .nav__item {
-  margin-right: 29px;
+  margin-right: convert(29px);
+  margin-bottom: 8px;
 
   &:last-child {
      margin-right: 0;

@@ -1,0 +1,39 @@
+.hamburger {
+  cursor: pointer;
+}
+
+.hamburger__menu {
+  width: 30px;
+  height: 20px;
+  display: none;
+
+  @include tablet {
+    display: block;  }
+}
+
+.hamburger__plank {
+  display: block;
+  background: #292929;
+  height: 4px;
+  width: 27px;
+  border-radius: 5px;  
+  position: relative;
+
+  &::before, &::after {
+    content: "";
+    background: #292929;
+    width: 27px;
+    height: 4px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    display: block;
+  }
+  &::before {
+    top: -10px;
+  }
+  &::after {
+    top: 10px;
+  }
+
+}
