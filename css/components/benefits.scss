@@ -1,8 +1,10 @@
 .benefits {
   display: flex;
 
+
   @include mobile {
     flex-direction: column;
+
 
   }
 }
@@ -11,6 +13,14 @@
   flex: 1;
   padding: 0 3%;
   position: relative;
+
+  @include tablet {
+    padding: 0 1%;
+
+    &::before {
+      display: none;
+    }
+  }
 
   @include mobile {
     display: flex;
@@ -59,6 +69,10 @@
 
 .benefit__img {
   margin-bottom: convert(15px);
+
+  @include tablet {
+    margin-bottom: 27px;
+  }
 }
 
 .benefit__img--wrapper {
@@ -85,6 +99,10 @@
   font-size: convert(24px);
   color: #292929;
   margin-bottom: convert(5px);
+
+  @include tablet {
+    font-size: 24px;
+  }
 }
 
 .benefit__desc {

@@ -24,6 +24,10 @@
     position: absolute;
     bottom: convert(-19px);
     left: 15%;
+
+    @include tablet {
+      left: 6%;
+    }
   }
 }
 

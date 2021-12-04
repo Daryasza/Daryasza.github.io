@@ -9,12 +9,12 @@ html {
 }
 @media screen and (max-width: 768px) {
   html {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 480px) {
   html {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
@@ -518,6 +518,11 @@ footer {
   bottom: -1.1875rem;
   left: 15%;
 }
+@media screen and (max-width: 768px) {
+  .section--benefits::before {
+    left: 6%;
+  }
+}
 
 .section--reviwes::before {
   content: url(../img/add_icons/separator6-7.svg);
@@ -552,6 +557,11 @@ footer {
     font-size: 32px;
   }
 }
+@media screen and (max-width: 768px) {
+  .heading__title {
+    font-size: 48px;
+  }
+}
 
 .heading--benefits {
   margin-bottom: 3.9375rem;
@@ -568,6 +578,11 @@ footer {
 .heading--benefits--title {
   margin-bottom: 0.625rem;
 }
+@media screen and (max-width: 768px) {
+  .heading--benefits--title {
+    margin-bottom: 15px;
+  }
+}
 
 .heading__text {
   padding: 0 22%;
@@ -575,7 +590,8 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .heading__text {
-    padding: 0 17%;
+    padding: 0 15%;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -604,6 +620,14 @@ footer {
           flex: 1;
   padding: 0 3%;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .benefits__item {
+    padding: 0 1%;
+  }
+  .benefits__item::before {
+    display: none;
+  }
 }
 @media screen and (max-width: 480px) {
   .benefits__item {
@@ -651,6 +675,11 @@ footer {
 .benefit__img {
   margin-bottom: 0.9375rem;
 }
+@media screen and (max-width: 768px) {
+  .benefit__img {
+    margin-bottom: 27px;
+  }
+}
 
 .benefit__img--wrapper {
   display: inline-block;
@@ -677,6 +706,11 @@ footer {
   font-size: 1.5rem;
   color: #292929;
   margin-bottom: 0.3125rem;
+}
+@media screen and (max-width: 768px) {
+  .benefit__title {
+    font-size: 24px;
+  }
 }
 
 .benefit__desc {

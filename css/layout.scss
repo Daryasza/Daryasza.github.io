@@ -6,11 +6,11 @@ html {
   font-size: $fontSize;
 
   @include tablet {
-    font-size: $fontSize - 2px;
+    font-size: $fontSize - 1px;
   }
 
   @include mobile {
-    font-size: $fontSize - 3px;
+    font-size: $fontSize - 2px;
   }
 }
 
