@@ -10,6 +10,17 @@
   }
 }
 
+.contacts--footer {
+  @include tablet {
+    padding-left: 45px;
+  }
+}
+
 .contacts__address {
   font-style: normal;
+
+  @include tablet {
+    font-size: 21px;
+  }
+
 }

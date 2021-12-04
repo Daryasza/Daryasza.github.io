@@ -9,7 +9,7 @@ html {
 }
 @media screen and (max-width: 768px) {
   html {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -353,8 +353,19 @@ footer {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .contacts--footer {
+    padding-left: 45px;
+  }
+}
+
 .contacts__address {
   font-style: normal;
+}
+@media screen and (max-width: 768px) {
+  .contacts__address {
+    font-size: 21px;
+  }
 }
 
 .phone {
@@ -387,6 +398,11 @@ footer {
 .phone__number {
   font-style: normal;
   display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  .phone__number {
+    font-size: 18px;
+  }
 }
 
 .hamburger {
@@ -530,6 +546,11 @@ footer {
   left: 18%;
   position: absolute;
 }
+@media screen and (max-width: 768px) {
+  .section--reviwes::before {
+    left: 9%;
+  }
+}
 
 .section--form {
   background: url(../img/form-section-bg.png) center center no-repeat;
@@ -570,9 +591,19 @@ footer {
 .heading--reviews {
   margin-bottom: 1.4375rem;
 }
+@media screen and (max-width: 768px) {
+  .heading--reviews {
+    margin-bottom: 35px;
+  }
+}
 
 .heading--form {
-  margin-bottom: 3.125rem;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .heading--form {
+    margin-bottom: 37px;
+  }
 }
 
 .heading--benefits--title {
@@ -778,7 +809,7 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-    padding: 40px;
+    padding: 60px 35px 40px;
   }
 }
 
@@ -810,7 +841,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .review__main {
-    max-width: 90%;
+    max-width: 95%;
   }
 }
 
@@ -820,13 +851,17 @@ footer {
   color: #292929;
   margin-bottom: 0.9375rem;
 }
+@media screen and (max-width: 768px) {
+  .review__title {
+    font-size: 24px;
+  }
+}
 
 .review__text {
   margin-bottom: 2rem;
 }
 
 .review__author {
-  font-weight: 700;
   font-size: 1.125rem;
   color: #292929;
 }
@@ -901,8 +936,8 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .inputs__col {
-    padding: 0 20%;
-    margin-right: 0px;
+    padding: 0 18.5%;
+    margin-right: 5px;
   }
 }
 
@@ -911,6 +946,11 @@ footer {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 0.9375rem;
+}
+@media screen and (max-width: 768px) {
+  .inputs__row {
+    margin-bottom: 2px;
+  }
 }
 
 .inputs__block {
@@ -925,10 +965,15 @@ footer {
 
 .inputs__form {
   width: 100%;
-  min-height: 3.625rem;
+  height: 3.625rem;
   border-radius: 0.1875rem;
   padding: 1.125rem 0.6875rem;
   border: 0.1875rem solid transparent;
+}
+@media screen and (max-width: 768px) {
+  .inputs__form {
+    height: 10px;
+  }
 }
 .inputs__form:focus {
   border: 0.1875rem solid #CA1B36;
@@ -941,8 +986,16 @@ textarea {
   overflow: scroll;
   margin-bottom: 1.5625rem;
 }
+
 @media screen and (max-width: 768px) {
-  textarea {
+  .inputs__block--text text {
+    height: 45px;
+    padding: 0.3125rem 0.6875rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .inputs__block--textarea textarea {
     height: 5.125rem;
   }
 }
@@ -954,6 +1007,11 @@ textarea {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 0.9375rem;
+}
+@media screen and (max-width: 768px) {
+  .inputs__controls {
+    margin-bottom: 25px;
+  }
 }
 .inputs__controls:last-child {
   margin-bottom: 0;

@@ -42,7 +42,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 40px;
+    padding: 60px 35px 40px;
   }
 }
 
@@ -69,7 +69,7 @@
   max-width: 50%;
 
   @include tablet {
-    max-width: 90%;
+    max-width: 95%;
   }
 
 }
@@ -79,6 +79,12 @@
   font-weight: 700;
   color: #292929;
   margin-bottom: convert(15px);
+
+
+  @include tablet {
+    font-size: 24px;
+  }
+
 }
 
 .review__text {
@@ -87,7 +93,6 @@
 
 
 .review__author {
-  font-weight: 700;
   font-size: convert(18px);
   color: #292929;
 }

@@ -1,5 +1,6 @@
 .inputs {
   display: flex;
+
    @include tablet {
      flex-direction: column;
    }
@@ -14,8 +15,8 @@
   }
 
   @include tablet {
-    padding: 0 20%;
-    margin-right: 0px;
+    padding: 0 18.5%;
+    margin-right: 5px;
 
   }
 }
@@ -23,6 +24,10 @@
 .inputs__row {
   display: flex;
   margin-bottom: convert(15px);
+
+  @include tablet {
+    margin-bottom: 2px;
+  }
 }
 
 .inputs__block {
@@ -31,23 +36,25 @@
 
   &:last-child {
     margin-right: 0;
-
   }
 
 }
 
 .inputs__form {
   width: 100%;
-  min-height: convert(58px);
+  height: convert(58px);
   border-radius: convert(3px);
   padding: convert(18px) convert(11px);
   border: convert(3px) solid transparent;
+
+  @include tablet {
+    height: 10px;
+  }
 
   &:focus {
     border: convert(3px) solid $bred;
     outline: none;
   }
-
 }
 
 textarea {
@@ -56,15 +63,38 @@ textarea {
   overflow: scroll;
   margin-bottom: convert(25px);
 
-  @include tablet {
-    height: convert(82px);
+  
+}
+
+.inputs__block--text {
+  text {
+    @include tablet {
+      height: 45px;
+      padding: convert(5px) convert(11px);
+    }
   }
+}
+
+.inputs__block--textarea {
+
+  textarea{
+    @include tablet {
+      height: convert(82px);
+    }
+
+  }
+
 }
 
 .inputs__controls {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: convert(15px);
+
+  @include tablet {
+    margin-bottom: 25px;
+
+  }
 
   &:last-child {
     margin-bottom: 0;

@@ -38,7 +38,10 @@
     bottom: convert(-25px);
     left: 18%;
     position: absolute;
-  
+
+    @include tablet {
+      left: 9%;
+    }
   }
 }
 

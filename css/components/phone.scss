@@ -23,5 +23,9 @@
 .phone__number {
   font-style: normal;
   display: inline-block;
+
+  @include tablet {
+    font-size: 18px;
+  }
 }
 

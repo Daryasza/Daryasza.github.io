@@ -6,7 +6,7 @@ html {
   font-size: $fontSize;
 
   @include tablet {
-    font-size: $fontSize - 1px;
+    font-size: $fontSize;
   }
 
   @include mobile {

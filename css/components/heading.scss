@@ -1,11 +1,8 @@
 .heading {
   text-align: center;
-
-
 }
 
 .heading__title {
-
 
   @include mobile {
     font-size: 32px;
@@ -22,10 +19,18 @@
 
 .heading--reviews {
   margin-bottom: convert(23px);
+
+  @include tablet {
+    margin-bottom: 35px;
+  }
 }
 
 .heading--form {
-  margin-bottom: convert(50px);
+  margin-bottom: 50px;
+
+  @include tablet {
+    margin-bottom: 37px;
+  }
 }
 
 .heading--benefits--title {
