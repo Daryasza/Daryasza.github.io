@@ -88,7 +88,7 @@ footer {
 }
 
 .container {
-  width: 97%;
+  width: 95%;
   max-width: 914px;
   margin: 0 auto;
   position: relative;
@@ -103,7 +103,7 @@ footer {
 }
 
 .hero {
-  min-height: 650px;
+  min-height: 50rem;
   height: 100vh;
   background-color: #F5F5F5;
   position: relative;
@@ -117,13 +117,11 @@ footer {
 @media screen and (max-width: 768px) {
   .hero::before {
     right: 10.5%;
-    bottom: -1.625rem;
   }
 }
 @media screen and (max-width: 480px) {
   .hero::before {
     right: 11%;
-    bottom: -1.0625rem;
   }
 }
 
@@ -177,7 +175,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 @media screen and (max-width: 768px) {
   .hero__title-section {
@@ -311,7 +309,7 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 1.125rem;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 .header .phone__icon {
   width: 0.9375rem;
@@ -481,7 +479,12 @@ footer {
 .hamburger {
   cursor: pointer;
   height: 1.5625rem;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hamburger__menu {
@@ -489,7 +492,9 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .hamburger__menu {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -498,7 +503,7 @@ footer {
   background: #292929;
   width: 1.6875rem;
   height: 0.25rem;
-  border-radius: 0.3125rem;
+  border-radius: 0.1875rem;
   position: relative;
 }
 .hamburger__plank::before, .hamburger__plank::after {
@@ -506,13 +511,13 @@ footer {
   background: #292929;
   width: 1.6875rem;
   height: 0.25rem;
-  border-radius: 0.3125rem;
+  border-radius: 0.1875rem;
   position: absolute;
   left: 0;
   display: block;
 }
 .hamburger__plank::before {
-  top: 1.25rem;
+  top: -0.625rem;
 }
 .hamburger__plank::after {
   top: 0.625rem;
@@ -584,7 +589,7 @@ footer {
 }
 
 .section {
-  min-height: 650px;
+  min-height: 50rem;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;

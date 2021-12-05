@@ -1,5 +1,5 @@
 .hero {
-  min-height: 650px;
+  min-height: convert(800px);
   height: 100vh;
   background-color: $grey;
   position: relative;
@@ -12,12 +12,10 @@
 
     @include tablet {
       right: 10.5%;
-      bottom: convert(-26px);
     }
 
     @include mobile {
       right: 11%;
-      bottom: convert(-17px);
     }
   }
 }
@@ -49,7 +47,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: convert(50px);
 
   @include tablet {
     flex: 1;

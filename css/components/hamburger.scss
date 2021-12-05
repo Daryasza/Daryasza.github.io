@@ -1,37 +1,38 @@
 .hamburger {
   cursor: pointer;
   height: convert(25px);
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
 .hamburger__menu {
   display: none;
 
   @include tablet {
-    display: block;  }
+    display: flex;  }
 }
 
 .hamburger__plank {
   display: block;
   background: #292929;
   width: convert(27px);
-  height: convert(4px);
-  border-radius: convert(5px);  
+  height: 0.25rem;
+  border-radius: convert(3px);  
   position: relative;
 
   &::before, &::after {
     content: "";
     background: #292929;
     width: convert(27px);
-    height: convert(4px);
-    border-radius: convert(5px);
+    height: 0.25rem;
+    border-radius: convert(3px);
     position: absolute;
     left: 0;
     display: block;
   }
   
   &::before {
-    top: convert(20px);
+    top: convert(-10px);
   }
 
   &::after {
