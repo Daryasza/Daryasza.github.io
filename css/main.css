@@ -103,7 +103,8 @@ footer {
 }
 
 .hero {
-  min-height: 100vh;
+  min-height: 650px;
+  height: 100vh;
   background-color: #F5F5F5;
   position: relative;
 }
@@ -583,7 +584,8 @@ footer {
 }
 
 .section {
-  min-height: 100vh;
+  min-height: 650px;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

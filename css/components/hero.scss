@@ -1,9 +1,9 @@
 .hero {
-  min-height: 100vh;
+  min-height: 650px;
+  height: 100vh;
   background-color: $grey;
   position: relative;
   
-
   &::before {
     content: url(../img/add_icons/separator1-2.svg);
     position: absolute;
