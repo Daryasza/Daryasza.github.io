@@ -10,9 +10,8 @@
 }
 
 .header__nav {
-  margin: 10px 30px 0;
+  margin: convert(10px) convert(30px) 0;
 
-  
   @include tablet {
     display: none;
   }

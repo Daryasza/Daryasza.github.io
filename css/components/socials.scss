@@ -6,40 +6,46 @@
 .socials__item {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 6px;
-
-  @include mobile {
-    margin-right: 10px;
-  }
+  margin-right: convert(6px);
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @include tablet {
+    margin-right: convert(13px);
+  }
+
+  @include mobile {
+    margin-right: convert(14px);
   }
 }
 
 .socials__link {
 
   &--active {
+
   .socials__img {
     fill: black;
-  }
+    }
   }
 }
 
 .socials__img {
   fill: #B3B3B3;
-  width: 30px;
-  height: 30px;
+  width: convert(30px);
+  height: convert(30px);
   display: block;
-
-  @include mobile {
-    width: 24px;
-    height: 24px;
-    display: block;
-  }
 
   &:hover {
     fill: black;
+  }
+
+  @include mobile {
+    width: convert(24px);
+    height: convert(24px);
+    display: inline-block;
+    align-items: center;
   }
 }
 

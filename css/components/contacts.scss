@@ -1,5 +1,5 @@
 .contacts--header {
-  margin-top: 10px;
+  margin-top: convert(10px);
 
   @include tablet {
     display: none;
@@ -13,10 +13,8 @@
 .contacts--footer {
   
   @include mobile {
-    padding-left: 10px;
-    margin-bottom: 15px;
+    margin-bottom: convert(15px);
   }
-
 }
 
 .contacts__address {
@@ -25,12 +23,11 @@
   display: flex;
 
   @include tablet {
-    font-size: 21px;
+    font-size: convert(21px);
   }
 
   @include mobile {
-    font-size: 18px;
-    margin-bottom: 13px;
+    font-size: convert(18px);
+    margin-bottom: convert(13px);
   }
-
 }

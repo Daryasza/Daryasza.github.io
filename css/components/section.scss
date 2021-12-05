@@ -28,6 +28,10 @@
     @include tablet {
       left: 6%;
     }
+
+    @include mobile {
+      left: 10%;
+    }
   }
 }
 
@@ -42,6 +46,10 @@
     @include tablet {
       left: 9%;
     }
+
+    @include mobile {
+      left: 11%;
+    }
   }
 }
 
@@ -55,14 +63,14 @@
     right: 19.3%;
     top: convert(-23px);
 
+    @include tablet {
+      right: 9.3%;
+    }
+
     @include mobile {
       right: 9%;
     }
-
-
   }
-
-
 }
 
 .section--contacts {

@@ -12,12 +12,12 @@
 
     @include tablet {
       right: 10.5%;
-      bottom: -26px;
+      bottom: convert(-26px);
     }
 
     @include mobile {
       right: 11%;
-      bottom: -17px;
+      bottom: convert(-17px);
     }
 
   }
@@ -35,6 +35,7 @@
     background: none;
     justify-content: flex-start;
   }
+  
   @include mobile {
     background: none;
     justify-content: flex-start;
@@ -56,17 +57,17 @@
     align-items: center;
 
     .hero__btn {
-      padding: 20px 43px; 
-      font-size: 16px;
+      padding: convert(20px) convert(43px); 
+      font-size: convert(16px);
     }
 
     &::before {
       content: "";
       background: url(../img/big_beats/beats_hellosect.png) center center no-repeat;
       background-size: contain;
-      width: 23.1875rem;
-      height: 23.1875rem;
-      margin-bottom: 63px;
+      width: convert(323px);
+      height: convert(323px);
+      margin-bottom: convert(63px);
     }
   }
 
@@ -77,17 +78,17 @@
     align-items: center;
 
     .hero__btn {
-      padding: 20px 37px; 
-      font-size: 19px;
+      padding: convert(20px) convert(37px); 
+      font-size: convert(19px);
     }
 
     &::before {
       content: "";
       background: url(../img/big_beats/beats_hellosect.png) center center no-repeat;
       background-size: contain;
-      width: 323px;
-      height: 323px;
-      margin-bottom: 48px;
+      width: convert(323px);
+      height: convert(323px);
+      margin-bottom: convert(48px);
     }
   }
 }
@@ -100,15 +101,15 @@
   @include tablet {
     max-width: 91%; 
     text-align: center;
-    font-size: 48px;
-    margin-bottom: 6px;
+    font-size: convert(48px);
+    margin-bottom: convert(6px);
   }
 
   @include mobile {
     max-width: 83%; 
     text-align: center;
-    font-size: 32px;
-    margin-bottom: 14px;
+    font-size: convert(32px);
+    margin-bottom: convert(14px);
   }
 }
 
@@ -120,16 +121,16 @@
   @include tablet {
     max-width: 49%; 
     text-align: center; 
-    font-size: 18px;
+    font-size: convert(18px);
     line-height: 1.4;
-    margin-bottom: 20px;
+    margin-bottom: convert(20px);
   }
 
   @include mobile {
     max-width: 69%; 
     text-align: center; 
     line-height: 1.2;
-    margin-bottom: 25px;
+    margin-bottom: convert(25px);
   }
 }
 

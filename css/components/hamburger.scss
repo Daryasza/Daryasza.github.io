@@ -1,6 +1,6 @@
 .hamburger {
   cursor: pointer;
-  height: 25px;
+  height: convert(25px);
   display: block;
 }
 
@@ -14,26 +14,27 @@
 .hamburger__plank {
   display: block;
   background: #292929;
-  width: 27px;
-  height: 4px;
-  border-radius: 5px;  
+  width: convert(27px);
+  height: convert(4px);
+  border-radius: convert(5px);  
   position: relative;
 
   &::before, &::after {
     content: "";
     background: #292929;
-    width: 27px;
-    height: 4px;
-    border-radius: 5px;
+    width: convert(27px);
+    height: convert(4px);
+    border-radius: convert(5px);
     position: absolute;
     left: 0;
     display: block;
   }
+  
   &::before {
-    top: 20px;
-  }
-  &::after {
-    top: 10px;
+    top: convert(20px);
   }
 
+  &::after {
+    top: convert(10px);
+  }
 }
