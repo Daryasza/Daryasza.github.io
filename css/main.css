@@ -106,7 +106,6 @@ footer {
   min-height: 100vh;
   background-color: #F5F5F5;
   position: relative;
-  padding: 1.5625rem 0 2.8125rem;
 }
 .hero::before {
   content: url(../img/add_icons/separator1-2.svg);
@@ -138,7 +137,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1.5625rem 0 2.8125rem;
+  padding: 0.9375rem 0 2.8125rem;
   height: 100%;
 }
 @media screen and (min-width: 769px) {

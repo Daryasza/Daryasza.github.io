@@ -1,9 +1,8 @@
 .hero {
   min-height: 100vh;
   background-color: $grey;
- // min-height: convert(650px);
   position: relative;
-  padding: convert(25px) 0 convert(45px);
+  
 
   &::before {
     content: url(../img/add_icons/separator1-2.svg);
@@ -27,7 +26,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: convert(25px) 0 convert(45px);
+  padding: convert(15px) 0 convert(45px);
   height: 100%;
 
   @media screen and (min-width: 769px) {
