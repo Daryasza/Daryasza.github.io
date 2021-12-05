@@ -4,6 +4,17 @@ body, html {
   height: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
 body {
   background: #fff;
   color: #292929;
@@ -40,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  margin: 0;
+  margin-top: 0;
 }
 
 button {
@@ -91,33 +102,7 @@ footer {
   line-height: 3rem;
 }
 
-.hero {
-  background-color: #F5F5F5;
-  height: 100vh;
-  min-height: 40.625rem;
-  position: relative;
-}
-.hero::before {
-  content: url(../img/add_icons/separator1-2.svg);
-  position: absolute;
-  bottom: -1.6875rem;
-  right: 20%;
-}
-@media screen and (max-width: 768px) {
-  .hero::before {
-    right: 10.5%;
-    bottom: -1.625rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .hero::before {
-    right: 11%;
-    bottom: -1.0625rem;
-  }
-}
-
 .hero__container {
-  background: url("../img/big_beats/beats_hellosect.png") right center/52% auto no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,8 +113,12 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100%;
   padding: 1.5625rem 0 2.8125rem;
+}
+@media screen and (min-width: 769px) {
+  .hero__container {
+    background: url("../img/big_beats/beats_hellosect-desk.png") right center/47% auto no-repeat;
+  }
 }
 @media screen and (max-width: 768px) {
   .hero__container {
@@ -162,6 +151,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 50px;
 }
 @media screen and (max-width: 768px) {
   .hero__title-section {
@@ -188,7 +178,7 @@ footer {
   }
   .hero__title-section::before {
     content: "";
-    background: url(../img/big_beats/beats_hellosect.png) center center no-repeat;
+    background: url(../img/big_beats/beats_hellosect-tablet.webp) center center no-repeat;
     background-size: contain;
     width: 20.1875rem;
     height: 20.1875rem;
@@ -217,7 +207,7 @@ footer {
   }
   .hero__title-section::before {
     content: "";
-    background: url(../img/big_beats/beats_hellosect.png) center center no-repeat;
+    background: url(../img/big_beats/beats_hellosect-tablet.webp) center center no-repeat;
     background-size: contain;
     width: 20.1875rem;
     height: 20.1875rem;
@@ -295,6 +285,7 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 1.125rem;
+  margin-bottom: 50px;
 }
 .header .phone__icon {
   width: 0.9375rem;
@@ -328,8 +319,8 @@ footer {
 
 .logo__img {
   fill: #E01F3D;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   display: block;
 }
 
@@ -383,7 +374,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 @media screen and (max-width: 768px) {
   .contacts__address {
@@ -448,7 +439,7 @@ footer {
 .phone__number {
   font-style: normal;
   display: inline-block;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 @media screen and (max-width: 768px) {
   .phone__number {
@@ -515,11 +506,13 @@ footer {
 
 .advantages__icon {
   width: 2.5rem;
+  height: 2.5rem;
   margin-right: 0.625rem;
 }
 
 .advantages__img {
   width: 100%;
+  height: 100%;
 }
 
 .advantages__text {
@@ -565,8 +558,7 @@ footer {
 }
 
 .section {
-  height: 100vh;
-  min-height: 40.625rem;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -579,6 +571,29 @@ footer {
           justify-content: center;
   color: #666666;
   position: relative;
+}
+.section--hero {
+  min-height: 100vh;
+  background-color: #F5F5F5;
+  position: relative;
+}
+.section--hero::before {
+  content: url(../img/add_icons/separator1-2.svg);
+  position: absolute;
+  bottom: -1.6875rem;
+  right: 20%;
+}
+@media screen and (max-width: 768px) {
+  .section--hero::before {
+    right: 10.5%;
+    bottom: -1.625rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section--hero::before {
+    right: 11%;
+    bottom: -1.0625rem;
+  }
 }
 .section--form {
   background-color: #181818;
@@ -623,7 +638,7 @@ footer {
 }
 
 .section--form {
-  background: url(../img/form-section-bg.png) center center no-repeat;
+  background: url(../img/form-section-bg.webp) center center no-repeat;
   background-size: cover;
 }
 .section--form::before {
@@ -1280,7 +1295,7 @@ textarea {
 }
 
 .map {
-  background: url(../img/map.svg) center center/100% no-repeat;
+  background: url(../img/map.webp) center center/100% no-repeat;
   background-size: cover;
   height: 100%;
   width: 100%;

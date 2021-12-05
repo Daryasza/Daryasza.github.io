@@ -36,7 +36,7 @@
 .phone__number {
   font-style: normal;
   display: inline-block;
-  font-size: 18px;
+  font-size: convert(18px);
 
   @include tablet {
     font-size: convert(18px);

@@ -1,11 +1,35 @@
 .section {
-  height: 100vh;
-  min-height: convert(650px);
+  min-height: 100vh;
+  //min-height: convert(650px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #666666;
   position: relative;
+
+  &--hero {
+    min-height: 100vh;
+    background-color: $grey;
+   // min-height: convert(650px);
+    position: relative;
+  
+    &::before {
+      content: url(../img/add_icons/separator1-2.svg);
+      position: absolute;
+      bottom: convert(-27px);
+      right: 20%;
+  
+      @include tablet {
+        right: 10.5%;
+        bottom: convert(-26px);
+      }
+  
+      @include mobile {
+        right: 11%;
+        bottom: convert(-17px);
+      }
+    }
+  }
 
   &--form {
     background-color: #181818;
@@ -54,7 +78,7 @@
 }
 
 .section--form {
-  background: url(../img/form-section-bg.png) center center no-repeat;
+  background: url(../img/form-section-bg.webp) center center no-repeat;
   background-size: cover;
 
   &::before {

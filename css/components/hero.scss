@@ -1,35 +1,12 @@
-.hero {
-  background-color: $grey;
-  height: 100vh;
-  min-height: convert(650px);
-  position: relative;
-
-  &::before {
-    content: url(../img/add_icons/separator1-2.svg);
-    position: absolute;
-    bottom: convert(-27px);
-    right: 20%;
-
-    @include tablet {
-      right: 10.5%;
-      bottom: convert(-26px);
-    }
-
-    @include mobile {
-      right: 11%;
-      bottom: convert(-17px);
-    }
-
-  }
-}
-
 .hero__container {
-  background: url("../img/big_beats/beats_hellosect.png") right center /52% auto no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
   padding: convert(25px) 0 convert(45px);
+
+  @media screen and (min-width: 769px) {
+    background: url("../img/big_beats/beats_hellosect-desk.png") right center /47% auto no-repeat;
+  }
 
   @include tablet {
     background: none;
@@ -39,7 +16,6 @@
   @include mobile {
     background: none;
     justify-content: flex-start;
-
   }
 }
 
@@ -48,6 +24,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  margin-bottom: 50px;
 
   @include tablet {
     flex: 1;
@@ -63,7 +40,7 @@
 
     &::before {
       content: "";
-      background: url(../img/big_beats/beats_hellosect.png) center center no-repeat;
+      background: url(../img/big_beats/beats_hellosect-tablet.webp) center center no-repeat;
       background-size: contain;
       width: convert(323px);
       height: convert(323px);
@@ -84,7 +61,7 @@
 
     &::before {
       content: "";
-      background: url(../img/big_beats/beats_hellosect.png) center center no-repeat;
+      background: url(../img/big_beats/beats_hellosect-tablet.webp) center center no-repeat;
       background-size: contain;
       width: convert(323px);
       height: convert(323px);

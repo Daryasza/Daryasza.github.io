@@ -10,7 +10,7 @@
 <body>
   <div class="wrapper">
     <div class="maincontent">
-      <section class="hero">
+      <section class="section section--hero">
         <div class="container hero__container">
             <header class="header">
               <a href="#" class="header__logo logo"><svg class="logo__img"><use xlink:href="../img/sprite.svg#logo"></use></svg></a>
@@ -59,7 +59,10 @@
             <div class="hero__content-section">
               <ul class="hero__list advantages">
                 <li class="advantages__item">
-                  <div class="advantages__icon"><svg class="advantages__img"><use xlink:href="../img/sprite.svg#adv-sound"></use></svg></div>
+                  <div class="advantages__icon">
+
+                    <svg class="advantages__img"><use xlink:href="../img/sprite.svg#adv-sound"></use></svg>
+                  </div>
                   <div class="advantages__text">Безупречный звук</div>
                 </li>
                 <li class="advantages__item">
@@ -132,7 +135,21 @@
             <div class="reviews-display">
               <div class="review">
                 <div class="review__avatar">
-                  <img src="../img/reviewers/reviewer1.png" alt="billie eilish" class="review__img">
+                  <picture class="review__img">
+                    <source
+                    srcset="../img/reviewers/reviewer1-desk.webp"
+                    media="(min-width: 769px)"
+                    type="image/webp"
+                    alt="desk"
+                    >
+                    <source
+                    srcset="../img/reviewers/reviewer1-tablet.webp"
+                    media="(max-width: 768px)"
+                    type="image/webp"
+                    alt="tablet"
+                    >
+                    <img src="../img/reviewers/reviewer1.png" alt="billie eilish" class="review__img">
+                  </picture>
                 </div>
                 <article class="review__main">
                   <h2 class="review__title">Отличный звук</h2>
@@ -147,7 +164,22 @@
             </div>
             <ul class="review__list">
               <li class="review__item interactive-avatar interactive-avatar--active">
-                <a href="" class="interactive-avatar__link"><img src="../img/reviewers/reviewer1.png" alt="billie eilish" class="interactive-avatar__img"></a>
+                <a href="" class="interactive-avatar__link">
+                  <picture class="interactive-avatar__img">
+                    <source
+                    srcset="../img/reviewers/reviewer1-desk.webp"
+                    media="(min-width: 769px)"
+                    type="image/webp"
+                    alt="desk"
+                    >
+                    <source
+                    srcset="../img/reviewers/reviewer1-tablet.webp"
+                    media="(max-width: 768px)"
+                    type="image/webp"
+                    alt="tablet"
+                    >
+                      <img src="../img/reviewers/reviewer1.png" alt="billie eilish" class="interactive-avatar__img">
+                  </picture></a>
               </li>
               <li class="review__item interactive-avatar">
                 <a href="" class="interactive-avatar__link"><img src="../img/reviewers/reviewer2.png" alt="black hair man" class="interactive-avatar__img"></a>
