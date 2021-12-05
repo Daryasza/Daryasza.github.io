@@ -15,10 +15,6 @@
   @include tablet {
     margin-right: convert(13px);
   }
-
-  @include mobile {
-    margin-right: convert(14px);
-  }
 }
 
 .socials__link {

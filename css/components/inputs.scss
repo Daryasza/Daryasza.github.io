@@ -17,12 +17,10 @@
   @include tablet {
     padding: 0 18.5%;
     margin-right: convert(5px);
-
   }
 
   @include mobile {
     padding: 0 1%;
-
   }
 }
 
@@ -31,16 +29,16 @@
   margin-bottom: convert(15px);
 
   @include tablet {
-    margin-bottom: convert(15px);
+    margin-bottom: convert(20px);
   }
 }
 
 .inputs__row--textarea {
-
   @include tablet {
-    margin-bottom: convert(-5px);
+    margin-bottom: 0px;
   }
 }
+
 
 .inputs__block {
   flex: 1;
@@ -48,6 +46,17 @@
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+textarea {
+  height: convert(150px);
+  resize: none;
+  overflow: scroll;
+  margin-bottom: convert(25px);
+
+  @include tablet {
+    height: convert(82px);
   }
 }
 
@@ -59,7 +68,7 @@
   border: convert(3px) solid transparent;
 
   @include tablet {
-    height: convert(36px);
+    height: convert(38px);
     padding: convert(4px) convert(8px);
   }
 
@@ -69,30 +78,15 @@
   }
 }
 
-textarea {
+.inputs__form--textarea {
   height: convert(150px);
-  resize: none;
-  overflow: scroll;
-  margin-bottom: convert(25px);
-}
 
-.inputs__block--text {
-  text {
-    @include tablet {
-      height: convert(45px);
-      padding: convert(5px) convert(11px);
-    }
+  @include tablet {
+    height: convert(90px);
   }
 }
 
-.inputs__block--textarea {
 
-  textarea{
-    @include tablet {
-      height: convert(82px);
-    }
-  }
-}
 
 .inputs__controls {
   display: flex;
@@ -105,7 +99,6 @@ textarea {
 
   @include mobile {
     justify-content: center;
-    margin-bottom: convert(11px);
   }
 
   &:last-child {
@@ -114,16 +107,10 @@ textarea {
 }
 
 .inputs__buttons {
-  margin-top: convert(35px);
+  margin-top: convert(40px);
 
   @include tablet {
     margin-top: convert(25px);
-    display: flex;
-    justify-content: center;
-  }
-
-  @include mobile {
-    margin-top: convert(26px);
     display: flex;
     justify-content: center;
   }
@@ -133,22 +120,12 @@ textarea {
     @include tablet {
       margin-right: convert(15px);
     }
-
-    @include mobile {
-      margin-right: convert(15px);
-    }
   }
 }
-
-
 
 .inputs__button--active {
 
   @include tablet {
-    color: $red;
-  }
-
-  @include mobile {
     color: $red;
   }
 }

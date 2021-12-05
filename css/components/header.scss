@@ -10,7 +10,6 @@
     height: convert(15px);
   }
 
-
   @include tablet {
     align-items: center;
   }
@@ -20,10 +19,6 @@
   margin: convert(10px) convert(30px) 0;
 
   @include tablet {
-    display: none;
-  }
-
-  @include mobile {
     display: none;
   }
 }
