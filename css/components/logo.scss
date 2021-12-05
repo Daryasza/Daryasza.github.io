@@ -1,3 +1,10 @@
 .logo {
   display: block;
 }
+
+.logo__img {
+  fill: $red;
+  width: 40px;
+  height: 40px;
+  display: block;
+}

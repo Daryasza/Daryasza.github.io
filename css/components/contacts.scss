@@ -21,6 +21,7 @@
   font-style: normal;
   flex-wrap: nowrap;
   display: flex;
+  font-size: 18px;
 
   @include tablet {
     font-size: convert(21px);

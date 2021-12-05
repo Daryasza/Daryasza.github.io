@@ -4,6 +4,12 @@
   justify-content: space-between;
   font-size: convert(18px);
 
+  .phone__icon {
+    width: convert(15px);
+    height: convert(15px);
+  }
+
+
   @include tablet {
     align-items: center;
   }

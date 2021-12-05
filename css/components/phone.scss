@@ -21,8 +21,6 @@
 
 .phone__icon {
   margin-right: convert(7px);
-  width: convert(16px);
-  height: convert(16px);
   min-height: 100%;
   display: block;
 
@@ -38,6 +36,7 @@
 .phone__number {
   font-style: normal;
   display: inline-block;
+  font-size: 18px;
 
   @include tablet {
     font-size: convert(18px);

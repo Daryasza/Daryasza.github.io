@@ -6,7 +6,7 @@
 .socials__item {
   display: inline-block;
   vertical-align: middle;
-  margin-right: convert(6px);
+  margin-right: convert(11px);
 
   &:last-child {
     margin-right: 0;
@@ -36,6 +36,7 @@
   width: convert(30px);
   height: convert(30px);
   display: block;
+  transition: .4s;
 
   &:hover {
     fill: black;

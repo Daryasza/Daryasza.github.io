@@ -22,16 +22,12 @@
     content: "";
     position: absolute;
     top: convert(-60px);
-    left: 50%;
+    left: 45%;
     display: block;
     width: convert(90px);
     height: convert(90px);
     background-color: #fff;
     border-radius: 50%;
-
-    @include tablet {
-      left: 45%;
-    }
 
     @include mobile {
       display: none;
