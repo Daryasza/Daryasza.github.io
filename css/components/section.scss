@@ -7,30 +7,6 @@
   color: #666666;
   position: relative;
 
-  &--hero {
-    min-height: 100vh;
-    background-color: $grey;
-   // min-height: convert(650px);
-    position: relative;
-  
-    &::before {
-      content: url(../img/add_icons/separator1-2.svg);
-      position: absolute;
-      bottom: convert(-27px);
-      right: 20%;
-  
-      @include tablet {
-        right: 10.5%;
-        bottom: convert(-26px);
-      }
-  
-      @include mobile {
-        right: 11%;
-        bottom: convert(-17px);
-      }
-    }
-  }
-
   &--form {
     background-color: #181818;
     color: #fff;

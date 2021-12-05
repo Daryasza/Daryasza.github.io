@@ -1,8 +1,34 @@
+.hero {
+  min-height: 100vh;
+  background-color: $grey;
+ // min-height: convert(650px);
+  position: relative;
+  padding: convert(25px) 0 convert(45px);
+
+  &::before {
+    content: url(../img/add_icons/separator1-2.svg);
+    position: absolute;
+    bottom: convert(-27px);
+    right: 20%;
+
+    @include tablet {
+      right: 10.5%;
+      bottom: convert(-26px);
+    }
+
+    @include mobile {
+      right: 11%;
+      bottom: convert(-17px);
+    }
+  }
+}
+
 .hero__container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: convert(25px) 0 convert(45px);
+  height: 100%;
 
   @media screen and (min-width: 769px) {
     background: url("../img/big_beats/beats_hellosect-desk.png") right center /47% auto no-repeat;

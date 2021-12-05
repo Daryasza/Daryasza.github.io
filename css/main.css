@@ -102,6 +102,31 @@ footer {
   line-height: 3rem;
 }
 
+.hero {
+  min-height: 100vh;
+  background-color: #F5F5F5;
+  position: relative;
+  padding: 1.5625rem 0 2.8125rem;
+}
+.hero::before {
+  content: url(../img/add_icons/separator1-2.svg);
+  position: absolute;
+  bottom: -1.6875rem;
+  right: 20%;
+}
+@media screen and (max-width: 768px) {
+  .hero::before {
+    right: 10.5%;
+    bottom: -1.625rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero::before {
+    right: 11%;
+    bottom: -1.0625rem;
+  }
+}
+
 .hero__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,6 +139,7 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1.5625rem 0 2.8125rem;
+  height: 100%;
 }
 @media screen and (min-width: 769px) {
   .hero__container {
@@ -571,29 +597,6 @@ footer {
           justify-content: center;
   color: #666666;
   position: relative;
-}
-.section--hero {
-  min-height: 100vh;
-  background-color: #F5F5F5;
-  position: relative;
-}
-.section--hero::before {
-  content: url(../img/add_icons/separator1-2.svg);
-  position: absolute;
-  bottom: -1.6875rem;
-  right: 20%;
-}
-@media screen and (max-width: 768px) {
-  .section--hero::before {
-    right: 10.5%;
-    bottom: -1.625rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .section--hero::before {
-    right: 11%;
-    bottom: -1.0625rem;
-  }
 }
 .section--form {
   background-color: #181818;
