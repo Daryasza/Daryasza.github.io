@@ -13,7 +13,7 @@
   }
 
   @include tablet {
-    margin-right: convert(13px);
+    margin-right: 1.15rem;
   }
 }
 
@@ -29,8 +29,8 @@
 
 .socials__img {
   fill: #B3B3B3;
-  width: convert(30px);
-  height: convert(30px);
+  width: 1.8rem;
+  height: 1.8rem;
   display: block;
   transition: .4s;
 
@@ -39,8 +39,8 @@
   }
 
   @include mobile {
-    width: convert(24px);
-    height: convert(24px);
+    width: 1.7rem;
+    height: 1.7rem;
     display: inline-block;
     align-items: center;
   }

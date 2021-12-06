@@ -121,14 +121,10 @@
   }
 }
 
-
 .hero__content-section {
   max-width: 56%;
 
   @include tablet {
-    display: none;
-  }
-  @include mobile {
     display: none;
   }
 }
