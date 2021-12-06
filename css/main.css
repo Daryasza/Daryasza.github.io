@@ -109,10 +109,12 @@ footer {
   position: relative;
 }
 .hero::before {
-  content: url(../img/add_icons/separator1-2.svg);
+  content: url("../img/sprite.svg#separator1-2");
   position: absolute;
   bottom: -1.6875rem;
   right: 20%;
+  height: 41px;
+  width: 41px;
 }
 @media screen and (max-width: 768px) {
   .hero::before {
@@ -627,17 +629,6 @@ footer {
 
 .heading {
   text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-  .heading__title {
-    font-size: 3rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .heading__title {
-    font-size: 2rem;
-  }
 }
 
 .heading--benefits {
