@@ -5,12 +5,12 @@
   position: relative;
   
   &::before {
-    content: url("../img/sprite.svg#separator1-2");
+    content: url("../../img/sprite.svg#separator1-2");
     position: absolute;
     bottom: convert(-27px);
     right: 20%;
-    height: 41px;
-    width: 41px;
+    height: convert(41px);
+    width: convert(41px);
 
     @include tablet {
       right: 10.5%;

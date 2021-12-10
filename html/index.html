@@ -46,7 +46,7 @@
                   <a href="tel:+7 800 903 90 90" class="phone__number">8 800 903 90 90</a>
                 </div>
               </address>
-              <div class="hamburger">
+              <div class="hamburger" id="hamburger">
                 <a class="hamburger__menu">
                   <div class="hamburger__plank"></div>
                 </a>
@@ -202,12 +202,52 @@
               <div class="inputs__row">
                 <label class="inputs__block">
                   <div class="inputs__title">Имя</div>
-                  <input type="text" class="inputs__form">
+                  <input id="name" type="text" class="inputs__form">
                 </label>
+                <script>
+                  const name = document.querySelector('#name')
+                  name.addEventListener('keydown', function(event) {
+                    let isDigit = false; 
+                    
+                    if (event.key >=0 || event.key <=9) {
+                      isDigit = true; 
+                    }
+                    if (isDigit == true) {
+                      event.preventDefault();
+                    }
+                  });
+                </script>
                 <label class="inputs__block">
                   <div class="inputs__title">Телефон</div>
-                  <input type="text" class="inputs__form">
+                  <input id ="inputPhone" type="text" class="inputs__form">
                 </label>
+                <script>
+                  const inputPhone = document.querySelector('#inputPhone');
+                  inputPhone.addEventListener('keydown', function(event) {
+                    let isDigit = false; 
+                    let isDash = false;
+                    let isPlus = false;
+                    let isControl = false;
+
+                    if (event.key >=0 || event.key <=9) {
+                      isDigit = true; 
+                    }
+                    if (event.key == '-') {
+                      isDash = true;
+                    }
+                    if (event.key == '+') {
+                      isPlus = true;
+                    }
+                    if (event.key == 'ArrowRight' || event.key == 'ArrowLeft' || event.key == 'Backspace') {
+                      isControl = true;
+                    }
+
+                    if (!isDigit && !isControl && !isDash && !isPlus) {
+                      event.preventDefault();
+                    }
+                     
+                  });
+                </script>
               </div>
               <div class="inputs__row">
                 <label class="inputs__block">
@@ -311,5 +351,34 @@
       <li class="sidebar__item"><a href="#" class="sidebar__link"></a></li>
     </ul>
   </nav>
+  <div class="fullscreen-menu" id="FSmenu">
+    <a href="" class="fullscreen-menu__close" id="FSmenuClose"></a>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link">О нас</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Наушники</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Команда</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Цены</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Отзывы</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Как мы работаем</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <script src="../js/Fullscreen-menu.js"></script>
 </body>
 </html>
