@@ -936,21 +936,21 @@ footer {
 }
 @media screen and (min-width: 769px) {
   .slider__col--img {
-    background: url(../../img/slider/beats1.png) center center/100% auto no-repeat;
+    background: url(../img/slider/beats1.png) center center/100% auto no-repeat;
     height: 28.25rem;
     width: 28.25rem;
   }
 }
 @media screen and (max-width: 768px) {
   .slider__col--img {
-    background: url(../../img/slider/beats1-tablet.png) center center/100% auto no-repeat;
+    background: url(../img/slider/beats1-tablet.png) center center/100% auto no-repeat;
     height: 22rem;
     width: 22rem;
   }
 }
 @media screen and (max-width: 480px) {
   .slider__col--img {
-    background: url(../../img/slider/beats1-tablet.png) center center/100% auto no-repeat;
+    background: url(../img/slider/beats1-tablet.png) center center/100% auto no-repeat;
     height: 22rem;
     width: 22rem;
   }

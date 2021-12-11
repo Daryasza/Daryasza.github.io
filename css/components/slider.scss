@@ -48,19 +48,19 @@
 
   &--img {
     @media screen and (min-width: 769px) {
-      background: url(../../img/slider/beats1.png) center center /100% auto no-repeat;
+      background: url(../img/slider/beats1.png) center center /100% auto no-repeat;
       height: convert(452px);
       width: convert(452px);
     }
     
     @include tablet {
-      background: url(../../img/slider/beats1-tablet.png) center center /100% auto no-repeat;
+      background: url(../img/slider/beats1-tablet.png) center center /100% auto no-repeat;
       height: 22rem;
       width: 22rem;
     }
 
     @include mobile {
-      background: url(../../img/slider/beats1-tablet.png) center center /100% auto no-repeat;
+      background: url(../img/slider/beats1-tablet.png) center center /100% auto no-repeat;
       height: 22rem;
       width: 22rem;
     }
@@ -147,4 +147,5 @@ margin-bottom: convert(30px);
 
 .slider__btn {
   padding: convert(20px) convert(41px);
+
 }
