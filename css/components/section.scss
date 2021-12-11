@@ -38,6 +38,18 @@
 
 .section--slider {
   background-color: $grey;
+
+  &::before {
+    content: url(../img/add_icons/separator3-4.svg);
+    position: absolute;
+    z-index: 99999;
+    bottom: convert(-25px);
+    right: 21%;
+
+    @include tablet {
+      right: 6%;
+    }
+  }
 }
 
 .section--reviwes {

@@ -1,16 +1,23 @@
 .arrow {
-  border: solid black;
-  border-width: 0 5px 5px 0;
-  display: inline-block;
-  padding: 3px;
-  width: 30px;
-  height: 30px;
-  border-radius: 4px;
+  width: convert(19px);
+  height: convert(27px);
+  cursor: pointer;
 
   &--left {
-    transform: rotate(135deg);
+    margin-right: convert(10px);
+
+    @include tablet {
+      margin-right: 0;
+    }
   }
-  &--right {
-    transform: rotate(-45deg);
+
+  @include tablet {
+    padding-bottom: 310px;
   }
+}
+
+.arrow__img {
+  fill: black;
+  display: block;
+  transition: .4s;
 }

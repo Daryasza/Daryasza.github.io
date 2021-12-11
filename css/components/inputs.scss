@@ -35,7 +35,7 @@
 
 .inputs__row--textarea {
   @include tablet {
-    margin-bottom: 0px;
+    margin-bottom: convert(0px);
   }
 }
 
@@ -45,7 +45,7 @@
   margin-right: convert(13px);
 
   &:last-child {
-    margin-right: 0;
+    margin-right: 0px;
   }
 }
 

@@ -6,7 +6,7 @@
   bottom: 0;
   top: 0;
   display: none;
-}
+  }
 
 .fullscreen-menu__close {
   position: absolute;
@@ -46,9 +46,12 @@
   color: #fff;
   font-size: convert(36px);
   line-height: 1.1;
-  padding-top: convert(50px);
+  min-height: convert(800px);
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+
 }
 
 .menu__list {
