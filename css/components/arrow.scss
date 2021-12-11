@@ -1,6 +1,6 @@
 .arrow {
-  width: convert(19px);
-  height: convert(27px);
+  width: 19px;
+  height: 27px;
   cursor: pointer;
 
   &--left {
@@ -12,7 +12,7 @@
   }
 
   @include tablet {
-    padding-bottom: 310px;
+    padding-bottom: convert(310px);
   }
 }
 

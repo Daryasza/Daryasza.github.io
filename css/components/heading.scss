@@ -20,14 +20,14 @@
 
   @include tablet {
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: convert(15px);
   }
 
   .heading__title {
     font-size: convert(36px);
 
     @include tablet {
-      font-size: 28px;
+      font-size: convert(28px);
     }
   }
 

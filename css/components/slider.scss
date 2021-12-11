@@ -30,7 +30,7 @@
 
   @include tablet {
     margin-right: 0;
-    margin-bottom: 60px;
+    margin-bottom: convert(60px);
 
     &:last-child {
       margin-bottom: 0;
@@ -38,7 +38,7 @@
   }
 
   @include mobile {
-    margin-bottom: 25px;
+    margin-bottom: convert(25px);
     
     &:last-child {
       margin-bottom: 0;
