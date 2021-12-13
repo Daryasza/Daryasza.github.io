@@ -1,18 +1,35 @@
 .arrow {
-  width: 19px;
-  height: 27px;
+  width: convert(15px);
+  height: convert(29px);
   cursor: pointer;
+  position: absolute;
+  z-index: 100;
 
   &--left {
-    margin-right: convert(10px);
-
+    left: 0;
+    top: 50%;
+    
     @include tablet {
       margin-right: 0;
+      top: 36%;
+
+      @include mobile {
+        top: 36%;
+      }
     }
   }
 
-  @include tablet {
-    padding-bottom: convert(310px);
+  &--right {
+    right: 0;
+    top: 50%;
+
+    @include tablet {
+      top: 36%;
+    }
+
+    @include mobile {
+      top: 36%;
+    }
   }
 }
 
@@ -20,4 +37,5 @@
   fill: black;
   display: block;
   transition: .4s;
+  margin: 0 0;
 }
