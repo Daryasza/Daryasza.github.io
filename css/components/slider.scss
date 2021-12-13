@@ -1,3 +1,6 @@
+.slider--container {
+  max-width: $containerWidth + 63px;
+}
 .slider {
   display: flex;
   justify-content: center;
@@ -8,6 +11,7 @@
   position: relative;
   left: 0;
   display: flex;
+  transition: .5s;
 }
 
 .slider__item {

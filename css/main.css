@@ -866,6 +866,10 @@ footer {
   }
 }
 
+.slider--container {
+  max-width: 977px;
+}
+
 .slider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -882,6 +886,8 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .slider__item {
