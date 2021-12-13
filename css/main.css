@@ -1558,8 +1558,8 @@ textarea {
 
 .modal {
   background-color: #FFFFFF;
-  width: 309px;
-  height: 176px;
+  width: 19.3125rem;
+  height: 11rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1576,9 +1576,9 @@ textarea {
 }
 
 .text {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: black;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
 }
 
 .radio {
