@@ -6,7 +6,7 @@ openFullscreenMenu.addEventListener('click', function(element){
   FullscreenMenu.style.display = 'block';
 
   closeFullscreenMenu.addEventListener('click', function(element){
-  e.preventDefault();
+  element.preventDefault();
   FullscreenMenu.style.display = 'none';
   });
 });
