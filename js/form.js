@@ -66,6 +66,44 @@ const validateForm = (input) => {
   return isValid;
 }
 
+const sectionForm = document.querySelector('.section--form');
+const successMessage = createModal('Сообщение отправлено'); 
+
+function createModal(content) {
+  const overlay = document.createElement('div');
+  overlay.classList.add('overlay');
+
+  const modal = document.createElement('div');
+  modal.classList.add('modal');
+
+  const text = document.createElement('div');
+  text.classList.add('text');
+
+  const close = document.createElement('a');
+  close.classList.add('btn');
+  close.classList.add('btn--color--red');
+
+  overlay.appendChild(modal);
+  modal.appendChild(text);
+  text.innerHTML = content;
+  modal.appendChild(close);
+  close.href = "#";
+  close.innerHTML = "закрыть";
+
+  close.addEventListener('click', e => {
+    e.preventDefault();
+    sectionForm.removeChild(overlay);
+    });
+
+    overlay.addEventListener('click', function(element) {
+      if (element.target === overlay) {
+        close.click();
+      }
+    })
+  return overlay;
+}
+
+
 form.addEventListener('submit', e => {
   e.preventDefault();
 
@@ -76,9 +114,19 @@ form.addEventListener('submit', e => {
   }
 
   if (validateForm(input)) {
-    console.log('да');
+    
+    sectionForm.appendChild(successMessage);
+    form.reset();
+
   } else {
     console.log('нет');
   }
 });
 
+
+
+  
+
+
+
+ 
