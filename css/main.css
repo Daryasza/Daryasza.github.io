@@ -460,26 +460,26 @@ footer {
 .hamburger__plank {
   display: block;
   background: #292929;
-  width: 1.6875rem;
-  height: 0.25rem;
-  border-radius: 0.1875rem;
+  width: 1.7rem;
+  height: 0.2rem;
+  border-radius: 0.1rem;
   position: relative;
 }
 .hamburger__plank::before, .hamburger__plank::after {
   content: "";
   background: #292929;
-  width: 1.6875rem;
-  height: 0.25rem;
-  border-radius: 0.1875rem;
+  width: 1.7rem;
+  height: 0.2rem;
+  border-radius: 0.1rem;
   position: absolute;
   left: 0;
   display: block;
 }
 .hamburger__plank::before {
-  top: -0.625rem;
+  top: -0.5em;
 }
 .hamburger__plank::after {
-  top: 0.625rem;
+  top: 0.5em;
 }
 
 .advantages, .advantages__item {

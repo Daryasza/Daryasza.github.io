@@ -15,27 +15,27 @@
 .hamburger__plank {
   display: block;
   background: #292929;
-  width: convert(27px);
-  height: 0.25rem;
-  border-radius: convert(3px);  
+  width: 1.7rem;
+  height: 0.2rem;
+  border-radius: 0.1rem;  
   position: relative;
 
   &::before, &::after {
     content: "";
     background: #292929;
-    width: convert(27px);
-    height: 0.25rem;
-    border-radius: convert(3px);
+    width: 1.7rem;
+    height: 0.2rem;
+    border-radius:  0.1rem; 
     position: absolute;
     left: 0;
     display: block;
   }
   
   &::before {
-    top: convert(-10px);
+    top: -0.5em;
   }
 
   &::after {
-    top: convert(10px);
+    top: 0.5em;
   }
 }
