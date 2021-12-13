@@ -11,11 +11,11 @@
     
     @include tablet {
       margin-right: 0;
-      top: 36%;
-
-      @include mobile {
-        top: 36%;
-      }
+      top: 26%;
+      left: 16%;
+    }
+    @include mobile {
+      left: 0;
     }
   }
 
@@ -24,11 +24,12 @@
     top: 50%;
 
     @include tablet {
-      top: 36%;
+      top: 26%;
+      right: 16%;
     }
 
     @include mobile {
-      top: 36%;
+      right: 0;
     }
   }
 }
