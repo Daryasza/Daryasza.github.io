@@ -76,6 +76,10 @@ textarea {
     border: convert(3px) solid $bred;
     outline: none;
   }
+
+  &--error {
+    border-color: $red;
+  }
 }
 
 .inputs__form--textarea {

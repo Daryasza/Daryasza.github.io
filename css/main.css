@@ -1474,6 +1474,9 @@ textarea {
   border: 0.1875rem solid #CA1B36;
   outline: none;
 }
+.inputs__form--error {
+  border-color: #E01F3D;
+}
 
 .inputs__form--textarea {
   height: 9.375rem;
