@@ -149,8 +149,8 @@ textarea {
 
 .modal {
   background-color: #FFFFFF;
-  width: convert(309px);
-  height: convert(176px);
+  min-width: convert(309px);
+  min-height: convert(176px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -161,4 +161,6 @@ textarea {
   font-size: convert(18px);
   color: black;
   margin-bottom: convert(15px);
+  padding: 0 10%;
+  text-align: center;
 }

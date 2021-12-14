@@ -86,6 +86,7 @@ const validateForm = (input) => {
 const sectionForm = document.querySelector('.section--form');
 const body = document.body; 
 const successMessage = createModal('Сообщение отправлено'); 
+const failureMessage = createModal('Отправить письмо не удалось, повторите запрос позже');
 
 function createModal(content) {
   const overlay = document.createElement('div');
@@ -121,7 +122,7 @@ function createModal(content) {
   return overlay;
 }
 
-
+//Отправка данных на сервер
 form.addEventListener('submit', e => {
   e.preventDefault();
 
@@ -132,12 +133,30 @@ form.addEventListener('submit', e => {
   }
 
   if (validateForm(input)) {
-    
-    body.appendChild(successMessage);
-    form.reset();
 
-  } else {
-    console.log('нет');
+    const data = {
+      name: input.name.value, 
+      phone: input.phone.value,
+      comment: input.comment.value,
+      //сервер ждет значения поля email, не предусмотренного макетом, поэтому вставляю значение вручную
+      to: 'my@email.com'
+    }
+
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
+    xhr.responseType = 'json';
+    xhr.setRequestHeader('content-type', 'application/json');
+    xhr.send(JSON.stringify(data));
+    
+    xhr.addEventListener('load', () => {
+      if ((xhr.response.status)) {
+        body.appendChild(successMessage);
+        form.reset();
+      } else {
+        body.appendChild(failureMessage);
+        //в случае ошибки со стороны сервера, не очищаю содержимое формы для удобства отправки повторного запроса
+      }
+    });
   }
 });
 
