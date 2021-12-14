@@ -1538,7 +1538,7 @@ textarea {
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -1553,7 +1553,7 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 10000;
+  z-index: 10000000;
 }
 
 .modal {

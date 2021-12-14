@@ -84,6 +84,7 @@ const validateForm = (input) => {
 }
 
 const sectionForm = document.querySelector('.section--form');
+const body = document.body; 
 const successMessage = createModal('Сообщение отправлено'); 
 
 function createModal(content) {
@@ -109,7 +110,7 @@ function createModal(content) {
 
   close.addEventListener('click', e => {
     e.preventDefault();
-    sectionForm.removeChild(overlay);
+    body.removeChild(overlay);
     });
 
     overlay.addEventListener('click', function(element) {
@@ -132,7 +133,7 @@ form.addEventListener('submit', e => {
 
   if (validateForm(input)) {
     
-    sectionForm.appendChild(successMessage);
+    body.appendChild(successMessage);
     form.reset();
 
   } else {
