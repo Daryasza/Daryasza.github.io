@@ -85,8 +85,8 @@ const validateForm = (input) => {
 
 const sectionForm = document.querySelector('.section--form');
 const body = document.body; 
-const successMessage = createModal('Сообщение отправлено'); 
-const failureMessage = createModal('Отправить письмо не удалось, повторите запрос позже');
+const successMessage = createModal('Сообщение отправлено!'); 
+const failureMessage = createModal('Отправить письмо не удалось, повторите запрос позже.');
 
 function createModal(content) {
   const overlay = document.createElement('div');
