@@ -16,16 +16,16 @@
   display: block;
   background: #292929;
   width: 1.7rem;
-  height: 0.2rem;
-  border-radius: 0.1rem;  
+  height: 4px;
+  border-radius: 3px;  
   position: relative;
 
   &::before, &::after {
     content: "";
     background: #292929;
     width: 1.7rem;
-    height: 0.2rem;
-    border-radius:  0.1rem; 
+    height: 4px;
+    border-radius: 3px; 
     position: absolute;
     left: 0;
     display: block;
