@@ -114,8 +114,6 @@ function createModal(content) {
 form.addEventListener('submit', e => {
   e.preventDefault();
 
-  body.style.overflow="hidden";
-
   const input = {
     name: form.elements.name,
     phone: form.elements.phone,
@@ -123,6 +121,7 @@ form.addEventListener('submit', e => {
   }
 
   if (validateForm(input)) {
+    body.style.overflow="hidden";
 
     const data = {
       name: input.name.value, 
