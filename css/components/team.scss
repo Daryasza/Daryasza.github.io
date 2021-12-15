@@ -1,0 +1,80 @@
+.team__list {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;
+  min-height: convert(440px);
+
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.team__photo {
+  width: 100%;
+  height: 100%;
+  margin-bottom: convert(20px);
+}
+
+.team__img {
+  object-fit: contain;
+}
+
+.team__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: 2%;
+  width: 24%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.team__item--active > .team__content-block {
+  height: auto;
+  max-height: 100%;
+  display: block;
+  transition: max-height 1s ease-out;
+  transform: scaleY(100%);
+  transform-origin: bottom;
+}
+
+.team__item--active  > .team__name::after {
+  transform: rotate(180deg);
+  top: convert(6px);
+
+}
+
+.team__content-block {
+  height: auto;
+  max-height: 0;
+  overflow: hidden;
+  transition: height .5s;
+}
+
+
+.team__name {
+  font-size: convert(18px);
+  font-weight: 700;
+  color: #292929;
+  margin-bottom: convert(10px);
+  position: relative;
+
+  &::after {
+    content: url("../img/add_icons/team-arrow.svg");
+    width: convert(16px);
+    height: convert(20px);
+    position: absolute;
+    right: convert(-15px);
+    top: convert(-2px);
+    transition: .3s;
+  }
+}
+
+.team__position {
+  color: #292929;
+}
