@@ -1554,6 +1554,8 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   z-index: 10000000;
+  -ms-scroll-chaining: none;
+      overscroll-behavior: contain;
 }
 
 .modal {

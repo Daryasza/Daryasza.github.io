@@ -6,10 +6,13 @@ const FullscreenMenu = document.querySelector('#FSmenu');
 
 openFullscreenMenu.addEventListener('click', function(element){
   FullscreenMenu.style.display = 'block';
+  document.body.style.overflow="hidden";
+
 
   closeFullscreenMenu.addEventListener('click', function(element){
   element.preventDefault();
   FullscreenMenu.style.display = 'none';
+  document.body.style.overflow="scroll"
   });
 });
 
@@ -108,9 +111,12 @@ function createModal(content) {
   modal.appendChild(close);
   close.href = "#";
   close.innerHTML = "закрыть";
+  
 
   close.addEventListener('click', e => {
     e.preventDefault();
+
+    body.style.overflow="scroll";
     body.removeChild(overlay);
     });
 
@@ -125,6 +131,8 @@ function createModal(content) {
 //Отправка данных на сервер
 form.addEventListener('submit', e => {
   e.preventDefault();
+
+  body.style.overflow="hidden";
 
   const input = {
     name: form.elements.name,
@@ -154,6 +162,7 @@ form.addEventListener('submit', e => {
         form.reset();
       } else {
         body.appendChild(failureMessage);
+        
         //в случае ошибки со стороны сервера, не очищаю содержимое формы для удобства отправки повторного запроса
       }
     });
