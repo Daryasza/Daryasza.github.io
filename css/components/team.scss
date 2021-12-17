@@ -1,23 +1,86 @@
-.team__list {
-  display: flex;
-  justify-content: center; 
-  align-items: flex-start;
-  min-height: convert(440px);
+.team__list--desktop {
+  @media screen and (min-width: 769px) {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    min-height: convert(440px);
+
+    .team__item--active > .team__content-block {
+      height: 100px;
+      display: block;
+      transition: height .4s;
+    }
+
+    .team__item {
+      width: 24%;
+    }
+
+    .team__photo {
+      width: 100%;
+      height: 100%;
+      margin-bottom: convert(20px);
+    }
+
+    .team__name {
+      font-size: 18px;
+
+      &::after {
+        content: url("../img/add_icons/team-arrow.svg");
+      }
+    }
+  }
 
   @include tablet {
-    flex-direction: column;
-    align-items: center;
+    display: none;
+
   }
 }
 
-.team__photo {
-  width: 100%;
-  height: 100%;
-  margin-bottom: convert(20px);
+.team__list--tablet {
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .team__item--active > .team__content-block {
+      height: 400px;
+      transition: height .4s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .team__item {
+      width: 30%;
+    }
+
+    .team__photo {
+      width: 222px;
+      height: 290px;
+      margin-bottom: 20px;
+    }
+
+    .team__name {
+      font-size: 21px;
+
+      &::after {
+        content: url("../img/add_icons/team-arrow-mobile.svg");
+      }
+    }
+
+    .team__position {
+      font-weight: 700;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    display: none;
+  }
 }
 
 .team__img {
   object-fit: contain;
+  display: block;
 }
 
 .team__item {
@@ -27,20 +90,10 @@
   align-items: center;
   text-align: center;
   margin-right: 2%;
-  width: 24%;
 
   &:last-child {
     margin-right: 0;
   }
-}
-
-.team__item--active > .team__content-block {
-  height: auto;
-  max-height: 100%;
-  display: block;
-  transition: max-height 1s ease-out;
-  transform: scaleY(100%);
-  transform-origin: bottom;
 }
 
 .team__item--active  > .team__name::after {
@@ -50,22 +103,18 @@
 }
 
 .team__content-block {
-  height: auto;
-  max-height: 0;
+  height: 0;
   overflow: hidden;
-  transition: height .5s;
+  transition: height .4s;
 }
 
-
 .team__name {
-  font-size: convert(18px);
   font-weight: 700;
   color: #292929;
   margin-bottom: convert(10px);
   position: relative;
 
   &::after {
-    content: url("../img/add_icons/team-arrow.svg");
     width: convert(16px);
     height: convert(20px);
     position: absolute;

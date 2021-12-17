@@ -40,12 +40,24 @@
   align-items: center;
   background-color: #F8FAF9;
   min-height: convert(348px);
+  position: absolute;
+  transition: 0.3s;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
 
   @include tablet {
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: convert(60px) convert(35px) convert(40px);
+  }
+  &--active {
+    position: static;
+    opacity: 1;
+
   }
 }
 
