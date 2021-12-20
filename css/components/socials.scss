@@ -13,7 +13,7 @@
   }
 
   @include tablet {
-    margin-right: 10px;
+    margin-right: convert(10px);
   }
 }
 

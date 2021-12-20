@@ -6,7 +6,7 @@
     min-height: convert(440px);
 
     .team__item--active > .team__content-block {
-      height: 100px;
+      height: convert(100px);
       display: block;
       transition: height .4s;
     }
@@ -22,7 +22,7 @@
     }
 
     .team__name {
-      font-size: 18px;
+      font-size: convert(18px);
 
       &::after {
         content: url("../img/add_icons/team-arrow.svg");
@@ -44,7 +44,7 @@
     align-items: center;
 
     .team__item--active > .team__content-block {
-      height: 400px;
+      height: convert(400px);
       transition: height .4s;
       display: flex;
       flex-direction: column;
@@ -55,13 +55,13 @@
     }
 
     .team__photo {
-      width: 222px;
-      height: 290px;
-      margin-bottom: 20px;
+      width: convert(222px);
+      height: convert(290px);
+      margin-bottom: convert(20px);
     }
 
     .team__name {
-      font-size: 21px;
+      font-size: convert(21px);
 
       &::after {
         content: url("../img/add_icons/team-arrow-mobile.svg");

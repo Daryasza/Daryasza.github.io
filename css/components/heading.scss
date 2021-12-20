@@ -54,6 +54,18 @@
   }
 }
 
+.heading--menu--title {
+  padding: convert(115px) convert(35px) 0 13%;
+
+  @include tablet {
+    padding: convert(100px) 3% 0 3%;
+  }
+  @include mobile {
+    padding: convert(100px) 3% 0 3%;
+    font-size: convert(32px);
+  }
+}
+
 .heading--reviews {
   margin-bottom: convert(23px);
 

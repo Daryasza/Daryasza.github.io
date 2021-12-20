@@ -16,6 +16,20 @@
     }
   }
 
+  &--menu {
+    color: #fff;
+    background: url(../img/section-backgrounds/menu-section/menu-section-bg.png) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+
+    .heading--menu--title {
+      color: inherit;
+    }
+  }
+
   @include mobile {
     min-height: 56rem;
   }
@@ -76,7 +90,7 @@
 }
 
 .section--form {
-  background: url(../img/form-section-bg.webp) center center no-repeat;
+  background: url(../img/section-backgrounds/form-section/form-section-bg.webp) center center no-repeat;
   background-size: cover;
 
   &::before {
