@@ -36,8 +36,6 @@
       .sct-menu__text {
         padding: 7% 9% 0 7%;
       }
-
-
     }
   }
 
@@ -67,6 +65,7 @@
   height: 100%;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 
   @include mobile {
     width: 4.8rem;

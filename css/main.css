@@ -1460,6 +1460,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
 }
 @media screen and (max-width: 480px) {
   .sct-menu__block {
