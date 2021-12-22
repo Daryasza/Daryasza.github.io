@@ -1,5 +1,5 @@
 .slider--container {
-  max-width: $containerWidth + 63px;
+  max-width: $containerWidth + convert(63px);
 }
 .slider {
   display: flex;

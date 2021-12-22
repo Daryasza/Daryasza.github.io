@@ -647,6 +647,10 @@ footer {
   }
 }
 
+.section--video {
+  background-color: #F5F5F5;
+}
+
 .section--form {
   background: url(../img/section-backgrounds/form-section/form-section-bg.webp) center center no-repeat;
   background-size: cover;
@@ -760,6 +764,10 @@ footer {
   .heading--reviews {
     margin-bottom: 1.25rem;
   }
+}
+
+.heading--video {
+  margin-bottom: 1.875rem;
 }
 
 .heading--form {
@@ -1651,6 +1659,208 @@ footer {
 }
 .review__item:last-child {
   margin-right: 0;
+}
+
+.video__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video {
+  position: relative;
+}
+
+video {
+  max-width: 41.375rem;
+  max-height: 24.5rem;
+  width: 100%;
+  height: auto;
+}
+
+.video__btn-playB {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 0 0;
+  width: 3.125rem;
+  height: 4.375rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.video__btn-playB--active {
+  opacity: 0;
+}
+
+.video__buttonB {
+  width: 100%;
+  height: 100%;
+}
+
+.video__controls {
+  width: 100%;
+  height: 2.1875rem;
+  background-color: black;
+  position: absolute;
+  bottom: 0.4375rem;
+  left: 0;
+  border: 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1.25rem;
+}
+
+.video__player-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+@media screen and (max-width: 480px) {
+  .video__player-wrapper {
+    width: 70%;
+  }
+}
+
+.video__play-btn {
+  width: 0.75rem;
+  height: 1rem;
+  cursor: pointer;
+  margin-right: 1.875rem;
+  padding: 0;
+  opacity: 1;
+  display: block;
+}
+.video__play-btn--active {
+  border: 0.25rem solid #fff;
+  height: 1rem;
+  width: 0.75rem;
+  border-top: 0;
+  border-bottom: 0;
+  padding: 0.125rem;
+  border-radius: 0.0625rem;
+  display: block;
+  margin-right: 1.8125rem;
+}
+.video__play-btn--active .video__button-play {
+  display: none;
+}
+
+.video__button-play {
+  width: 0.6875rem;
+  height: 1rem;
+}
+
+.video__duration-wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video__duration {
+  width: 100%;
+}
+
+.range {
+  position: relative;
+  background: #868686;
+  height: 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.125rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+.range::-webkit-slider-runnable-track {
+  color: #E01F3D;
+  -webkit-appearance: none;
+}
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #E01F3D;
+  cursor: pointer;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  border-radius: 50%;
+}
+.range::-moz-range-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background: #E01F3D;
+  cursor: pointer;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  border-radius: 50%;
+}
+
+.video__sound-btn {
+  margin-right: 0.625rem;
+  position: relative;
+}
+.video__sound-btn:before {
+  content: "";
+  width: 1.4375rem;
+  height: 0.1875rem;
+  background-color: #E01F3D;
+  border-radius: 0.0625rem;
+  position: absolute;
+  display: block;
+  left: 0.25rem;
+  top: 56%;
+  -webkit-transform: translateY(-50%) rotate(-40deg);
+          transform: translateY(-50%) rotate(-40deg);
+  z-index: 2;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.video__sound-btn--active:before {
+  opacity: 1;
+}
+
+.video__sound-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sound-input {
+  width: 4.0625rem;
+  height: 0.25rem;
 }
 
 .interactive-avatar {

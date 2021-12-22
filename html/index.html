@@ -460,6 +460,38 @@
           </div>
         </div>
       </section>
+      <section class="section section--video">
+        <div class="container">
+          <div class="video__wrapper">
+            <div class="heading heading--video">
+              <h2 class="heading__title heading--video--title title">как мы работаем</h2>
+            </div>
+            <div class="video">
+              <video class="video__link" src="../video/Beats.mp4" poster="../img/video/video-img.png" id="video">
+                <source src="../video/Beats.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <button class="play video__btn-playB">
+                <svg class="video__buttonB"><use xlink:href="../img/sprite.svg#play-btnB"></use></svg>
+              </button>
+              <div class="video__controls">
+                <div class="video__player-wrapper">
+                  <button class="video__play-btn"><svg class="video__button-play"><use xlink:href="../img/sprite.svg#play-btnB"></use></svg></button>
+                  <div class="video__duration-wrap">
+                    <input type="range" class="video__duration range" id="durationLevel">
+                    </div>
+                  </div>
+                <div class="video__sound-wrapper">
+                  <button class="video__sound-btn" id="soundOff/On"><img src="../img/video/sound-video.svg" alt="soundOff/On"></button>
+                  <div class="sound-input--wrap">
+                    <input type="range" class="sound-input range" id="sound-level">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </section>
       <section class="section section--form">
         <div class="container">
           <div class="heading heading--form">
@@ -553,7 +585,7 @@
                 <a href="#" class="socials__link"><svg  class="socials__img"><use xlink:href="../img/sprite.svg#vk"></use></svg></a>
               </li>
               <li class="socials__item">
-                <a href="#" class="socials__link socials__link--active"> <svg class="socials__img" ><use xlink:href="../img/sprite.svg#fb"></use></svg></a>
+                <a href="#" class="socials__link socials__link--active"><svg class="socials__img" ><use xlink:href="../img/sprite.svg#fb"></use></svg></a>
               </li>
               <li class="socials__item">
                 <a href="#" class="socials__link"><svg class="socials__img"><use xlink:href="../img/sprite.svg#in"></use></svg></a>
@@ -609,11 +641,13 @@
     </nav>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="/js/one-page-scroll.js"></script>
   <script src="../js/form.js"></script>
   <script src="../js/fs-menu.js"></script>
   <script src="../js/slider.js"></script>
   <script src="../js/team.js"></script>
   <script src="../js/menu.js"></script>
+  <script src="../js/video.js"></script>
   <script src="../js/reviews.js"></script>
   <script type="html/template" id="overlayTemplate">
     <div class="overlay">
