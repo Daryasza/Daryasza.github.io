@@ -47,3 +47,17 @@
     transform: translate(-50%, -50%);
   }
 }
+
+.sidebar--color--grey {
+
+  .sidebar__item--active {
+
+    .sidebar__link {
+      border-color: $dgrey;
+
+      &::before {
+        background-color: $dgrey;
+      }
+    }
+  }
+}

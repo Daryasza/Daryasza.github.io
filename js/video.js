@@ -1,4 +1,4 @@
-let interval;
+let intervalId;
 let soundControl;
 let durationControl;
 
@@ -48,11 +48,11 @@ function playStop() {
   playBtnB.classList.toggle("video__btn-playB--active");
   if (video.paused) {
     video.play();
-    interval = setInterval(updateDuration, 1000);
+    intervalId = setInterval(updateDuration, 100);
     playBtn.classList.add('video__play-btn--active');
   } else {
     video.pause();
-    clearInterval(interval)
+    clearInterval(intervalId)
     playBtn.classList.remove('video__play-btn--active');
   }
 }
