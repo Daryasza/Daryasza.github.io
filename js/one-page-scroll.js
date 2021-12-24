@@ -117,18 +117,18 @@ $('[data-scroll-to]').click(e => {
   scrollFunc(targetSection.index());
 })
 
-$(function() {
-  $("body").swipe( {
+// $(function() {
+//   $("body").swipe( {
     
-    swipe:function(event, direction) {
-      const scroller = newPositionDetector();
+//     swipe:function(event, direction) {
+//       const scroller = newPositionDetector();
 
-    }
-  });
+//     }
+//   });
 
-  //Set some options later
-  $("body").swipe( {fingers:2} );
-});
+//   //Set some options later
+//   $("body").swipe( {fingers:2} );
+// });
 
 
 
