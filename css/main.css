@@ -112,8 +112,8 @@ footer {
 }
 
 .hero {
-  min-height: 50rem;
-  height: 100vh;
+  min-height: 40.625rem;
+  height: 100%;
   background-color: #F5F5F5;
   position: relative;
 }
@@ -557,8 +557,8 @@ footer {
 }
 
 .section {
-  min-height: 50rem;
-  height: 100vh;
+  min-height: 40.625rem;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -638,7 +638,7 @@ footer {
   }
 }
 
-.section--reviwes::before {
+.section--reviews::before {
   content: url(../img/add_icons/separator6-7.svg);
   bottom: -1.5625rem;
   left: 18%;
@@ -646,12 +646,12 @@ footer {
   z-index: 99999;
 }
 @media screen and (max-width: 768px) {
-  .section--reviwes::before {
+  .section--reviews::before {
     left: 9%;
   }
 }
 @media screen and (max-width: 480px) {
-  .section--reviwes::before {
+  .section--reviews::before {
     left: 11%;
   }
 }

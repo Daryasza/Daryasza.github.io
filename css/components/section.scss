@@ -1,6 +1,6 @@
 .section {
-  min-height: 50rem;
-  height: 100vh;
+  min-height: convert(650px);
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,7 +70,7 @@
   }
 }
 
-.section--reviwes {
+.section--reviews {
 
   &::before{
     content: url(../img/add_icons/separator6-7.svg);

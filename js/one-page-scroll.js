@@ -1,93 +1,109 @@
 const section = $('.section');
 const maincontent = $('.maincontent');
+const sideBar = $('.sidebar');
+const sideBarItem = sideBar.find('.sidebar__item');
 
 section.first().addClass('active');
-
 let inMove = false;
 
 const scrollFunc = (sectionNumber) => {
-  if (inMove === false) {
-    inMove = true;
+  const newPosition = countSectionPosition(sectionNumber);
+  const sectionTransitionTime = 700;
+  const mouseInertiaTime = 300;
 
-    const newPosition = sectionNumber * -100;
-    const sideBar = $('.sidebar');
-    const currentSection = section.eq(sectionNumber);
-    const sideBarColor = currentSection.attr('data-sidebar-color');
+  if (inMove) return;
+  inMove = true;
 
-    if (sideBarColor === 'grey') {
-
-      console.log('да');
-      sideBar.addClass('sidebar--color--grey')
-    } else {
-      console.log('нет');
-
-      sideBar.removeClass('sidebar--color--grey')
-    }
-    maincontent.css({
+  maincontent.css({ 
     transform: `translateY(${newPosition}%)`
-    });
+  });
+  resetActiveClassForItem(section, sectionNumber, 'active');
+  changeSidebarColor(sectionNumber);
 
-    section
-    .eq(sectionNumber)
-    .addClass('active')
-    .siblings()
-    .removeClass('active');
+  setTimeout(() => {
+    inMove = false
+    resetActiveClassForItem(sideBarItem,sectionNumber, 'sidebar__item--active');
 
-    setTimeout(() => {
-      inMove = false
+  }, sectionTransitionTime + mouseInertiaTime);    
+}
 
-      sideBar
-      .find('.sidebar__item')
-      .eq(sectionNumber)
-      .addClass('sidebar__item--active')
-      .siblings()
-      .removeClass('sidebar__item--active');
+const countSectionPosition = (sectionNumber) => {
 
-    }, 900)
+  sectionPosition = sectionNumber * -100;
+
+  if (isNaN(sectionPosition)) {
+    console.error('передано не верное значение в countSectionPosition');
+    return 0;
+  }
+
+  return sectionPosition;
+}
+
+const resetActiveClassForItem = (item, itemEq, activeClass) => {
+  item.eq(itemEq).addClass(activeClass).siblings().removeClass(activeClass);
+}
+
+const changeSidebarColor = (sectionNumber) => {
+  const currentSection = section.eq(sectionNumber);
+  const sideBarColor = currentSection.attr('data-sidebar-color');
+
+  if (sideBarColor === 'grey') {
+
+    sideBar.addClass('sidebar--color--grey')
+  } else {
+
+    sideBar.removeClass('sidebar--color--grey')
   }
 }
 
-const newPositionDetect = (direction) => {
+const newPositionDetector = () => {
   const activeSection = section.filter('.active');
   const nextSection = activeSection.next();
   const prevSection = activeSection.prev();
 
-  if (direction === 'next' && nextSection.length) {
-    scrollFunc(nextSection.index());
-  }
-
-  if (direction === 'prev' && prevSection.length) {
-    scrollFunc(prevSection.index());
+  return {
+    next() {
+      if (nextSection.length) {
+        scrollFunc(nextSection.index());
+      }
+    },
+    prev() {
+      if (prevSection.length) {
+        scrollFunc(prevSection.index());
+      }
+    }
   }
 }
 
 $(window).on('wheel', (e) => {
   const deltaY = e.originalEvent.deltaY;
+  const scroller = newPositionDetector();
   
   if (deltaY > 0) {
-    newPositionDetect('next');
+    scroller.next();
   }
 
   if (deltaY < 0) {
-    newPositionDetect('prev');
+    scroller.prev();
   }
 })
 
 $(window).on('keydown', (e) => {
 
   const tagName = e.target.tagName.toLowerCase();
+  const userTypinginInputs = tagName == "input" || tagName == "textarea";
+  const scroller = newPositionDetector();
 
-  if (tagName !== "input" && tagName !== "textarea" ) {
+  if (userTypinginInputs) return;
 
-    switch (e.keyCode) {
-      case 40:
-        newPositionDetect('next');
-        break;
+  switch (e.keyCode) {
+    case 40:
+      scroller.next();
+      break;
 
-      case 38:
-        newPositionDetect('prev');
-        break;
-    }
+    case 38:
+      scroller.prev();
+      break;
   }
 })
 
