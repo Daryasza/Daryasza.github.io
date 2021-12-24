@@ -1,5 +1,7 @@
+const menuBtn = $('.sct-menu__block');
+
 $(document).ready(() => {
-  const menuBtn = $('.sct-menu__block');
+  
   for (let i = 0; i < menuBtn.length; i++) {
     const element = menuBtn[i];
 

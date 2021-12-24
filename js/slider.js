@@ -10,9 +10,11 @@ const sliderSwipe = (direction) => {
 
   for (let index = 0; index < sliderItems.length; index++) {
     const element = sliderItems[index];
+
     if (element.classList.contains('slider__item--active')) {
       i = index;
     }
+    
     element.classList.remove('slider__item--active');
   }
 
@@ -42,6 +44,7 @@ for (let i = 0; i < sliderBtn.length; i++) {
 
   element.addEventListener('click', function(e) {
     e.preventDefault();
+
     if (this.classList.contains('arrow--left')) {
       sliderSwipe('left')
     } else {

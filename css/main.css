@@ -123,9 +123,9 @@ footer {
   }
 }
 .hero::before {
-  content: url("../../img/sprite.svg#separator1-2");
+  content: url("../../img/add_icons/separator1-2.svg");
   position: absolute;
-  bottom: -1.6875rem;
+  bottom: -20px;
   right: 20%;
   height: 2.5625rem;
   width: 2.5625rem;
@@ -133,9 +133,9 @@ footer {
 @media screen and (max-width: 768px) {
   .hero::before {
     right: 10.5%;
+    bottom: -12px;
   }
 }
-
 .hero__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -635,7 +635,7 @@ footer {
   content: url(../img/add_icons/separator3-4.svg);
   position: absolute;
   z-index: 99999;
-  bottom: -1.5625rem;
+  bottom: -18px;
   right: 21%;
 }
 @media screen and (max-width: 768px) {
@@ -1705,6 +1705,11 @@ video {
   height: auto;
 }
 
+video[poster] {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .video__btn-playB {
   position: absolute;
   top: 50%;
@@ -1848,7 +1853,7 @@ video {
   margin-right: 0.625rem;
   position: relative;
   width: 1.875rem;
-  height: 1rem;
+  height: 1.25rem;
 }
 .video__sound-btn:before {
   content: "";

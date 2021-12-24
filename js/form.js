@@ -103,6 +103,7 @@ function createModal(content) {
     });
 
     overlay.addEventListener('click', function(element) {
+      
       if (element.target === overlay) {
         close.click();
       }

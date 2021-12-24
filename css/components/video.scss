@@ -15,6 +15,10 @@ video {
   height: auto;
 }
 
+video[poster]{
+  object-fit: cover;
+}
+
 .video__btn-playB {
   position: absolute;
   top: 50%;
@@ -28,6 +32,16 @@ video {
   &--active {
     opacity: 0;
   }
+
+  // &--reload {
+  //   background: url(../../img/video/refresh-button.svg);
+  //   width: 70px;
+  //   height: 70px;
+
+  //   .video__buttonB {
+  //     display: none;
+  //   }
+  // }
 }
 
 .video__buttonB {
@@ -143,7 +157,7 @@ video {
   margin-right: convert(10px);
   position: relative;
   width: convert(30px);
-  height: convert(16px);
+  height: convert(20px);
 
 
   &:before {

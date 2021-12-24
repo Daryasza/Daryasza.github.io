@@ -9,15 +9,20 @@
   }
   
   &::before {
-    content: url("../../img/sprite.svg#separator1-2");
+    content: url("../../img/add_icons/separator1-2.svg");
     position: absolute;
-    bottom: convert(-27px);
+    bottom: -20px;
     right: 20%;
     height: convert(41px);
     width: convert(41px);
 
     @include tablet {
       right: 10.5%;
+      bottom: -12px;
+    }
+
+    @include mobile {
+      
     }
   }
 }

@@ -8,62 +8,64 @@ const playBtnB = document.querySelector('.video__btn-playB');
 const soundBtn = document.querySelector('.video__sound-btn');
 
 
-document.addEventListener('DOMContentLoaded', () => {
+//нажатие на ключевые точки видео
+video.addEventListener('click', playStop);
+playBtnB.addEventListener('click', playStop);
+playBtn.addEventListener('click', playStop);
 
-  //нажатие на ключевые точки видео
-  video.addEventListener('click', playStop);
-  playBtnB.addEventListener('click', playStop);
-  playBtn.addEventListener('click', playStop);
+//изменение ползунка проигрывания видео
+durationControl = document.getElementById('durationLevel');
+durationControl.addEventListener('input', setVideoDuration);
 
-  //изменение ползунка проигрывания видео
-  durationControl = document.getElementById('durationLevel');
-  durationControl.addEventListener('input', setVideoDuration);
+durationControl.min = 0;
+video.onloadedmetadata = function() {
+  durationControl.max = video.duration * 1000;
+}
+durationControl.value = 0;
 
-  durationControl.min = 0;
-  durationControl.max = video.duration;
-  durationControl.value = 0;
+//нажатие кнопки вкл/выкл звука
+let micControl = document.getElementById("soundOff/On");
+micControl.addEventListener('click', soundOff);
 
-  //нажатие кнопки вкл/выкл звука
-  let micControl = document.getElementById("soundOff/On");
-  micControl.addEventListener('click', soundOff);
+//изменение ползунка звука
+soundControl = document.getElementById('sound-level');
+soundControl.addEventListener('input', changeSoundVolume);
+soundControl.min = 0;
+soundControl.max = 10;
 
-  //изменение ползунка звука
-  soundControl = document.getElementById('sound-level');
-  soundControl.addEventListener('input', changeSoundVolume);
-  soundControl.min = 0;
-  soundControl.max = 10;
+//значения звука по умолчанию
+soundControl.value = soundControl.max;
+let step = soundControl.max / 1000;
+let percent = video.volume / step;
+soundControl.style.background = `linear-gradient(90deg, #E01F3D 0%, #E01F3D ${percent}%, #868686 ${percent}%)`;
 
-  //значения звука по умолчанию
-  soundControl.value = soundControl.max;
-  let step = soundControl.max / 1000;
-  let percent = video.volume / step;
-  soundControl.style.background = `linear-gradient(90deg, #E01F3D 0%, #E01F3D ${percent}%, #868686 ${percent}%)`;
+//окончание видео
+video.addEventListener('ended', endOfVideo);
 
-  //окончание видео
-  video.addEventListener('ended', endOfVideo);
-});
 
 
 function playStop() {
   playBtnB.classList.toggle("video__btn-playB--active");
   if (video.paused) {
     video.play();
-    intervalId = setInterval(updateDuration, 100);
+
+    intervalId = setInterval(updateDuration, 10);
     playBtn.classList.add('video__play-btn--active');
   } else {
     video.pause();
+
     clearInterval(intervalId)
     playBtn.classList.remove('video__play-btn--active');
   }
 }
 
 function setVideoDuration() {
-  video.currentTime = durationControl.value;
+  video.currentTime = durationControl.value / 1000;
   updateDuration();
 }
 
 function updateDuration() {
-  durationControl.value = video.currentTime;
+  durationControl.value = video.currentTime * 1000;
 
   let step = video.duration / 100;
   let percent = video.currentTime / step;
