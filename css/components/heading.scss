@@ -37,6 +37,7 @@
 
   @include mobile {
     margin-bottom: convert(10px);
+    padding-top: 15px;
   }
 }
 
@@ -62,7 +63,6 @@
   }
   @include mobile {
     padding: convert(100px) 3% 0 3%;
-    font-size: convert(32px);
   }
 }
 

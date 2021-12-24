@@ -221,8 +221,8 @@ footer {
     content: "";
     background: url(../img/big_beats/beats_hellosect-tablet.webp) center center no-repeat;
     background-size: contain;
-    width: 17.5rem;
-    height: 17.5rem;
+    width: 18.75rem;
+    height: 18.75rem;
     margin-bottom: 3rem;
   }
 }
@@ -738,6 +738,7 @@ footer {
 @media screen and (max-width: 480px) {
   .heading--benefits--title {
     margin-bottom: 0.625rem;
+    padding-top: 15px;
   }
 }
 
@@ -768,7 +769,6 @@ footer {
 @media screen and (max-width: 480px) {
   .heading--menu--title {
     padding: 6.25rem 3% 0 3%;
-    font-size: 2rem;
   }
 }
 
