@@ -117,18 +117,36 @@ $('[data-scroll-to]').click(e => {
   scrollFunc(targetSection.index());
 })
 
-// $(function() {
-//   $("body").swipe( {
+
+//https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
+const mobileDet = new MobileDetect(window.navigator.userAgent);
+const isMobile = mobileDet.mobile();
+
+if (isMobile) {
+  //http://hgoebl.github.io/mobile-detect.js/
+  
+  $('.wrapper').on('touchmove', e => e.preventDefault());
+
+  $("body").swipe( {
     
-//     swipe:function(event, direction) {
-//       const scroller = newPositionDetector();
+    swipe:function(event, direction) {
+      const scroller = newPositionDetector();
 
-//     }
-//   });
+      let scrollDirection; 
 
-//   //Set some options later
-//   $("body").swipe( {fingers:2} );
-// });
+      if (direction === 'up') {
+        scrollDirection = 'next';
+      }
+
+      if (direction === 'down') {
+        scrollDirection = 'prev';
+      }
+      scroller[scrollDirection]();
+    }
+  });
+}
+
+
 
 
 
