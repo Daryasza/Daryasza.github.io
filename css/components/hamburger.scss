@@ -1,6 +1,6 @@
 .hamburger {
   cursor: pointer;
-  height: convert(25px);
+  height: 25px;
   display: flex;
   align-items: center;
 }
@@ -32,10 +32,10 @@
   }
   
   &::before {
-    top: -0.5em;
+    top: -8px;
   }
 
   &::after {
-    top: 0.5em;
+    top: 8px;
   }
 }

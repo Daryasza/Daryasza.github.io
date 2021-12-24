@@ -142,6 +142,9 @@ video {
 .video__sound-btn {
   margin-right: convert(10px);
   position: relative;
+  width: convert(30px);
+  height: convert(16px);
+
 
   &:before {
     content: '';
@@ -151,8 +154,8 @@ video {
     border-radius: convert(1px);
     position: absolute;
     display: block;
-    left: convert(4px);
-    top: 56%;
+    left: 4px;
+    top: 60%;
     transform: translateY(-50%) rotate(-40deg);
     z-index: 2;
     opacity: 0;

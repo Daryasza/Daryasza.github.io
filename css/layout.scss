@@ -7,7 +7,7 @@ html {
     font-size: $fontSize - 1px;
   }
   @include tablet {
-    font-size: $fontSize - 2px;
+    font-size: $fontSize - 4px;
   }
 }
 

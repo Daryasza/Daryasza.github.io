@@ -11,7 +11,7 @@ body, html {
 }
 @media screen and (max-width: 768px) {
   html {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -117,6 +117,11 @@ footer {
   background-color: #F5F5F5;
   position: relative;
 }
+@media screen and (max-width: 480px) {
+  .hero {
+    min-height: 34.375rem;
+  }
+}
 .hero::before {
   content: url("../../img/sprite.svg#separator1-2");
   position: absolute;
@@ -216,8 +221,8 @@ footer {
     content: "";
     background: url(../img/big_beats/beats_hellosect-tablet.webp) center center no-repeat;
     background-size: contain;
-    width: 20.1875rem;
-    height: 20.1875rem;
+    width: 17.5rem;
+    height: 17.5rem;
     margin-bottom: 3rem;
   }
 }
@@ -446,7 +451,7 @@ footer {
 
 .hamburger {
   cursor: pointer;
-  height: 1.5625rem;
+  height: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -485,10 +490,10 @@ footer {
   display: block;
 }
 .hamburger__plank::before {
-  top: -0.5em;
+  top: -8px;
 }
 .hamburger__plank::after {
-  top: 0.5em;
+  top: 8px;
 }
 
 .advantages, .advantages__item {
@@ -572,6 +577,11 @@ footer {
   color: #666666;
   position: relative;
 }
+@media screen and (max-width: 480px) {
+  .section {
+    min-height: 34.375rem;
+  }
+}
 .section--form {
   background-color: #181818;
   color: #fff;
@@ -598,11 +608,6 @@ footer {
 .section--menu .heading--menu--title {
   color: inherit;
 }
-@media screen and (max-width: 480px) {
-  .section {
-    min-height: 56rem;
-  }
-}
 
 .section--benefits::before {
   content: url(../img/add_icons/separator2-3.svg);
@@ -619,6 +624,7 @@ footer {
 @media screen and (max-width: 480px) {
   .section--benefits::before {
     left: 10%;
+    bottom: -17px;
   }
 }
 
@@ -674,6 +680,11 @@ footer {
 @media screen and (max-width: 768px) {
   .section--form::before {
     right: 9.3%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section--form::before {
+    top: -24px;
   }
 }
 
@@ -1836,6 +1847,8 @@ video {
 .video__sound-btn {
   margin-right: 0.625rem;
   position: relative;
+  width: 1.875rem;
+  height: 1rem;
 }
 .video__sound-btn:before {
   content: "";
@@ -1845,8 +1858,8 @@ video {
   border-radius: 0.0625rem;
   position: absolute;
   display: block;
-  left: 0.25rem;
-  top: 56%;
+  left: 4px;
+  top: 60%;
   -webkit-transform: translateY(-50%) rotate(-40deg);
           transform: translateY(-50%) rotate(-40deg);
   z-index: 2;

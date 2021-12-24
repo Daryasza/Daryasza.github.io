@@ -1,5 +1,9 @@
 {
   "devDependencies": {
     "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "jquery-touchswipe": "^1.6.19"
   }
 }

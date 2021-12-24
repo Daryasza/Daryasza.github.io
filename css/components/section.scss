@@ -7,6 +7,10 @@
   color: #666666;
   position: relative;
 
+  @include mobile {
+    min-height: convert(550px);
+  }
+
   &--form {
     background-color: #181818;
     color: #fff;
@@ -29,10 +33,6 @@
       color: inherit;
     }
   }
-
-  @include mobile {
-    min-height: 56rem;
-  }
 }
 
 .section--benefits {
@@ -50,6 +50,7 @@
 
     @include mobile {
       left: 10%;
+      bottom: -17px;
     }
   }
 }
@@ -107,6 +108,10 @@
 
     @include tablet {
       right: 9.3%;
+    }
+
+    @include mobile {
+      top: -24px;
     }
   }
 }
