@@ -11,7 +11,7 @@ isName.addEventListener('keydown', function(event) {
   if (isDigit == true) {
     event.preventDefault();
   }
-});
+})
 
 //Проверка телефона (доступны только -, +, backspace, arrows и цифры)
 const inputPhone = document.querySelector('#inputPhone');
@@ -150,8 +150,7 @@ form.addEventListener('submit', e => {
     });
   }
 });
-})()
-//ПОЛНОЭКРАННОЕ МЕНЮ 
+})()//ПОЛНОЭКРАННОЕ МЕНЮ 
 //Логика перехода от ссылки к нужной секции страницы прописана в файле one-page-scroll.js и подтянута через data-атрибуты html.
 (function() {
 const hamburgerFullScreenMenu = document.querySelector('#hamburger')

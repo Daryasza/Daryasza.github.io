@@ -11,7 +11,7 @@ isName.addEventListener('keydown', function(event) {
   if (isDigit == true) {
     event.preventDefault();
   }
-});
+})
 
 //Проверка телефона (доступны только -, +, backspace, arrows и цифры)
 const inputPhone = document.querySelector('#inputPhone');
