@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: convert(18px);
+  margin-bottom: convert(50px);
+
+  .phone__icon {
+    width: convert(15px);
+    height: convert(15px);
+  }
+
+  @include tablet {
+    align-items: center;
+  }
+}
+
+.header__nav {
+  margin: convert(10px) convert(30px) 0;
+
+  @include tablet {
+    display: none;
+  }
+}

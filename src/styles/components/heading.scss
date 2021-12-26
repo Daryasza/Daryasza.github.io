@@ -1,0 +1,91 @@
+.heading {
+  text-align: center;
+}
+
+.heading--benefits {
+  margin-bottom: convert(63px);
+
+  @include tablet {
+    margin-bottom: convert(53px);
+  }
+
+  @include mobile {
+    margin-bottom: convert(45px);
+  }
+}
+
+.heading--slider {
+  margin-bottom: convert(23px);
+  font-size: convert(36px);
+  max-width: 95%;
+
+  @include tablet {
+    max-width: 74%;
+    font-size: convert(28px);
+    max-width: 78%;
+    text-align: center;
+    margin-bottom: convert(15px);
+  }
+}
+
+.heading--benefits--title {
+  margin-bottom: convert(10px);
+
+  @include tablet {
+    margin-bottom: convert(15px);
+  }
+
+  @include mobile {
+    margin-bottom: convert(10px);
+    padding-top: 15px;
+  }
+}
+
+.heading__text {
+  padding: 0 22%;
+  line-height: 1.2;
+  
+  @include tablet {
+    padding: 0 15%;
+    font-size: convert(16px);
+  }
+
+  @include mobile {
+    padding: 0 2%;
+  }
+}
+
+.heading--menu--title {
+  padding: convert(115px) convert(35px) 0 13%;
+
+  @include tablet {
+    padding: convert(100px) 3% 0 3%;
+  }
+  @include mobile {
+    padding: convert(100px) 3% 0 3%;
+  }
+}
+
+.heading--reviews {
+  margin-bottom: convert(23px);
+
+  @include tablet {
+    margin-bottom: convert(35px);
+  }
+
+  @include mobile {
+    margin-bottom: convert(20px);
+  }
+}
+
+.heading--video {
+  margin-bottom: convert(30px);
+}
+
+.heading--form {
+  margin-bottom: convert(50px);
+
+  @include tablet {
+    margin-bottom: convert(37px);
+  }
+}

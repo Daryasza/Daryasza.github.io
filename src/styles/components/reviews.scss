@@ -1,0 +1,134 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+
+.reviews-display {
+  margin-bottom: convert(15px);
+  position: relative;
+  overflow: hidden;
+
+  @include tablet {
+    margin-bottom: convert(30px);
+  }
+
+  @include mobile {
+    margin-bottom: convert(38px);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: convert(-60px);
+    left: 45%;
+    display: block;
+    width: convert(90px);
+    height: convert(90px);
+    background-color: #fff;
+    border-radius: 50%;
+
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  background-color: #F8FAF9;
+  min-height: convert(348px);
+  position: absolute;
+  transition: 0.3s;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: convert(60px) convert(35px) convert(40px);
+  }
+  &--active {
+    position: static;
+    opacity: 1;
+
+  }
+}
+
+.review__avatar {
+  width: convert(253px);
+  height: convert(264px);
+  margin: 0 convert(42px);
+
+  @include tablet {
+    width: convert(130px);
+    height: convert(130px);
+    margin-bottom: convert(30px);
+  }
+
+  @include mobile {
+    width: convert(130px);
+    height: convert(130px);
+    margin-bottom: convert(25px);
+  }
+}
+
+.review__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.review__main {
+  flex: 1;
+  max-width: 50%;
+
+  @include tablet {
+    max-width: 95%;
+  }
+}
+
+.review__title {
+  font-size: convert(24px);
+  font-weight: 700;
+  color: #292929;
+  margin-bottom: convert(15px);
+
+
+  @include tablet {
+    font-size: convert(24px);
+  }
+}
+
+.review__text {
+  margin-bottom: convert(32px);
+
+  @include mobile {
+    margin-bottom: convert(10px);
+    line-height: 1.2;
+  }
+}
+
+.review__author {
+  font-size: convert(18px);
+  color: #292929;
+}
+
+.review__list {
+  display: flex;
+  justify-content: center;
+}
+
+.review__item {
+  margin-right: convert(10px);
+  
+  &:last-child {
+    margin-right: 0;
+  }
+}

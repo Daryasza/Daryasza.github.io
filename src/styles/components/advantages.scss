@@ -1,0 +1,20 @@
+.advantages, .advantages__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.advantages__icon {
+  width: convert(40px);
+  height: convert(40px);
+  margin-right: convert(10px);
+}
+
+.advantages__img {
+  width: 100%;
+  height: 100%;
+}
+
+.advantages__text {
+  max-width: convert(114px);
+}

@@ -1,0 +1,168 @@
+.inputs {
+  display: flex;
+
+   @include tablet {
+     flex-direction: column;
+   }
+}
+
+.inputs__col {
+  flex: 1;
+  margin-right: convert(28px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include tablet {
+    padding: 0 18.5%;
+    margin-right: convert(5px);
+  }
+
+  @include mobile {
+    padding: 0 1%;
+  }
+}
+
+.inputs__row {
+  display: flex;
+  margin-bottom: convert(15px);
+
+  @include tablet {
+    margin-bottom: convert(20px);
+  }
+}
+
+.inputs__row--textarea {
+  @include tablet {
+    margin-bottom: convert(0px);
+  }
+}
+
+
+.inputs__block {
+  flex: 1;
+  margin-right: convert(13px);
+
+  &:last-child {
+    margin-right: convert(0px);
+  }
+}
+
+textarea {
+  height: convert(150px);
+  resize: none;
+  overflow: scroll;
+  margin-bottom: convert(25px);
+
+  @include tablet {
+    height: convert(82px);
+  }
+}
+
+.inputs__form {
+  width: 100%;
+  height: convert(58px);
+  border-radius: convert(3px);
+  padding: convert(18px) convert(11px);
+  border: convert(3px) solid transparent;
+
+  @include tablet {
+    height: convert(38px);
+    padding: convert(4px) convert(8px);
+  }
+
+  &:focus {
+    border: convert(3px) solid $bred;
+    outline: none;
+  }
+
+  &--error {
+    border-color: $red;
+  }
+}
+
+.inputs__form--textarea {
+  height: convert(150px);
+
+  @include tablet {
+    height: convert(90px);
+  }
+}
+
+
+
+.inputs__controls {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: convert(15px);
+
+  @include tablet {
+    margin-bottom: convert(10px);
+  }
+
+  @include mobile {
+    justify-content: center;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.inputs__buttons {
+  margin-top: convert(40px);
+
+  @include tablet {
+    margin-top: convert(25px);
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn--color--bred {
+
+    @include tablet {
+      margin-right: convert(15px);
+    }
+  }
+}
+
+.inputs__button--active {
+
+  @include tablet {
+    color: $red;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #313131;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000000;
+  overscroll-behavior: contain;
+}
+
+.modal {
+  background-color: #FFFFFF;
+  min-width: convert(309px);
+  min-height: convert(176px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8%;
+}
+
+.text {
+  font-size: convert(18px);
+  color: black;
+  margin-bottom: convert(15px);
+  padding: 0 10%;
+  text-align: center;
+}

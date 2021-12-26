@@ -1,0 +1,48 @@
+.socials {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.socials__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: convert(11px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include tablet {
+    margin-right: convert(10px);
+  }
+}
+
+.socials__link {
+
+  &--active {
+
+  .socials__img {
+    fill: black;
+    }
+  }
+}
+
+.socials__img {
+  fill: #B3B3B3;
+  width: 1.8rem;
+  height: 1.8rem;
+  display: block;
+  transition: .4s;
+
+  &:hover {
+    fill: black;
+  }
+
+  @include mobile {
+    width: 1.7rem;
+    height: 1.7rem;
+    display: inline-block;
+    align-items: center;
+  }
+}
+

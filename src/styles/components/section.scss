@@ -1,0 +1,123 @@
+.section {
+  min-height: convert(650px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #666666;
+  position: relative;
+
+  @include mobile {
+    min-height: convert(550px);
+  }
+
+  &--form {
+    background-color: #181818;
+    color: #fff;
+
+    .heading--form--title {
+      color: inherit;
+    }
+  }
+
+  &--menu {
+    color: #fff;
+    background: url(../img/section-backgrounds/menu-section/menu-section-bg.png) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+
+    .heading--menu--title {
+      color: inherit;
+    }
+  }
+}
+
+.section--benefits {
+  
+  &::before {
+    content: url(../img/add_icons/separator2-3.svg);
+    position: absolute;
+    bottom: convert(-19px);
+    left: 15%;
+    z-index: 99999;
+
+    @include tablet {
+      left: 6%;
+    }
+
+    @include mobile {
+      left: 10%;
+      bottom: -17px;
+    }
+  }
+}
+
+.section--slider {
+  background-color: $grey;
+
+  &::before {
+    content: url(../img/add_icons/separator3-4.svg);
+    position: absolute;
+    z-index: 99999;
+    bottom: -18px;
+    right: 21%;
+
+    @include tablet {
+      right: 6%;
+    }
+  }
+}
+
+.section--reviews {
+
+  &::before{
+    content: url(../img/add_icons/separator6-7.svg);
+    bottom: convert(-25px);
+    left: 18%;
+    position: absolute;
+    z-index: 99999;
+
+    @include tablet {
+      left: 9%;
+    }
+
+    @include mobile {
+      left: 11%;
+    }
+  }
+}
+
+.section--video {
+  background-color: $grey;
+}
+
+
+.section--form {
+  background: url(../img/section-backgrounds/form-section/form-section-bg.webp) center center no-repeat;
+  background-size: cover;
+
+  &::before {
+    content: url("../img/add_icons/separator7-8.svg");
+    position: absolute;
+    right: 19.3%;
+    top: convert(-23px);
+    z-index: 99999;
+
+    @include tablet {
+      right: 9.3%;
+    }
+
+    @include mobile {
+      top: -24px;
+    }
+  }
+}
+
+.section--contacts {
+  height: 100vh;
+  min-height: convert(650px);
+  position: relative;
+}

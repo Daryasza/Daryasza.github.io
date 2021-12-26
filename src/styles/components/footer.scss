@@ -1,0 +1,25 @@
+.footer {
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: convert(23px) 0;
+
+  .phone__icon {
+    width: convert(13px);
+    height: convert(13px);
+  }
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
