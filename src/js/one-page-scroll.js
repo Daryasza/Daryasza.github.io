@@ -27,7 +27,7 @@ const scrollFunc = (sectionNumber) => {
     resetActiveClassForItem(sideBarItem, sectionNumber, 'sidebar__item--active');
 
   }, sectionTransitionTime + mouseInertiaTime);    
-}
+};
 
 const countSectionPosition = (sectionNumber) => {
 
@@ -39,11 +39,11 @@ const countSectionPosition = (sectionNumber) => {
   }
 
   return sectionPosition;
-}
+};
 
 const resetActiveClassForItem = (item, itemEq, activeClass) => {
   item.eq(itemEq).addClass(activeClass).siblings().removeClass(activeClass);
-}
+};
 
 const changeSidebarColor = (sectionNumber) => {
   const currentSection = section.eq(sectionNumber);
@@ -56,7 +56,7 @@ const changeSidebarColor = (sectionNumber) => {
 
     sideBar.removeClass('sidebar--color--grey')
   }
-}
+};
 
 const newPositionDetector = () => {
   const activeSection = section.filter('.active');
@@ -75,7 +75,7 @@ const newPositionDetector = () => {
       }
     }
   }
-}
+};
 
 $(window).on('wheel', (e) => {
   const deltaY = e.originalEvent.deltaY;
@@ -88,7 +88,7 @@ $(window).on('wheel', (e) => {
   if (deltaY < 0) {
     scroller.prev();
   }
-})
+});
 
 $(window).on('keydown', (e) => {
 
@@ -107,7 +107,7 @@ $(window).on('keydown', (e) => {
       scroller.prev();
       break;
   }
-})
+});
 
 $('[data-scroll-to]').click(e => {
   e.preventDefault();
@@ -117,7 +117,7 @@ $('[data-scroll-to]').click(e => {
   const targetSection = $(`[data-section-id=${target}]`);
 
   scrollFunc(targetSection.index());
-})
+});
 
 
 //https://github.com/mattbryson/TouchSwipe-Jquery-Plugin

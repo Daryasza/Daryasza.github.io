@@ -1,7 +1,7 @@
 (function() {
 
 const findBlock = (target) => {
-   return $('.review').filter((ndx, item) => {
+  return $('.review').filter((ndx, item) => {
     return $(item).attr('data-slide') === target;
   });
 };
@@ -16,7 +16,7 @@ $('.interactive-avatar__link').click(e => {
 
   slidetoShow.addClass('review--active').siblings().removeClass('review--active');
   currentAvatar.addClass('interactive-avatar--active').siblings().removeClass('interactive-avatar--active');
-})
+});
 })();
 
 

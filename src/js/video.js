@@ -25,7 +25,7 @@ durationControl.addEventListener('input', setVideoDuration);
 durationControl.min = 0;
 video.onloadedmetadata = function() {
   durationControl.max = video.duration * 1000;
-}
+};
 durationControl.value = 0;
 
 //нажатие кнопки вкл/выкл звука
@@ -57,7 +57,7 @@ function playStop() {
 
   } else {
     video.pause();
-    clearInterval(intervalId)
+    clearInterval(intervalId);
   }
 }
 

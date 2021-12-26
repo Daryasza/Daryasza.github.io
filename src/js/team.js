@@ -19,9 +19,9 @@ $(document).ready(() => {
           }
         }
       element.closest('.team__item').classList.toggle('team__item--active');
-    })
+    });
   }
-})
+});
 })();
 
 

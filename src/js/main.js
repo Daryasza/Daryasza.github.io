@@ -11,7 +11,7 @@ isName.addEventListener('keydown', function(event) {
   if (isDigit == true) {
     event.preventDefault();
   }
-})
+});
 
 //Проверка телефона (доступны только -, +, backspace, arrows и цифры)
 const inputPhone = document.querySelector('#inputPhone');
@@ -50,7 +50,7 @@ const validateField = (field) => {
     field.classList.remove('inputs__form--error');
     return true;
   }
-}
+};
 
 const validateForm = (input) => {
   let isValid = true
@@ -66,7 +66,7 @@ const validateForm = (input) => {
     }
   }
   return isValid;
-}
+};
 
 const sectionForm = document.querySelector('.section--form');
 const body = document.body; 
@@ -130,7 +130,7 @@ form.addEventListener('submit', e => {
       comment: input.comment.value,
       //сервер ждет значения поля email, не предусмотренного макетом, поэтому вставляю значение вручную
       to: 'my@email.com'
-    }
+    };
 
     const xhr = new XMLHttpRequest();
     xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
@@ -143,8 +143,7 @@ form.addEventListener('submit', e => {
         body.appendChild(successMessage);
         form.reset();
       } else {
-        body.appendChild(failureMessage);
-        
+        body.appendChild(failureMessage);  
         //в случае ошибки со стороны сервера, не очищаю содержимое формы для удобства отправки повторного запроса
       }
     });
@@ -154,7 +153,7 @@ form.addEventListener('submit', e => {
 //ПОЛНОЭКРАННОЕ МЕНЮ 
 //Логика перехода от ссылки к нужной секции страницы прописана в файле one-page-scroll.js и подтянута через data-атрибуты html.
 (function() {
-const hamburgerFullScreenMenu = document.querySelector('#hamburger')
+const hamburgerFullScreenMenu = document.querySelector('#hamburger');
 const xFullScreenMenu = document.querySelector('#FSmenuClose');
 const FullScreenMenu = document.querySelector('#FSmenu');
 const FSmenuItem = document.querySelectorAll('.menu__link');
@@ -173,18 +172,18 @@ FSmenuItem.forEach(element => {
   element.addEventListener('click', e => {
 
     closeFullScreenMenu();
-  })
+  });
 });
 
 const closeFullScreenMenu = () => {
   FullScreenMenu.style.display = 'none';
   document.body.style.overflow = "scroll";
-}
+};
 
 const openFullScreenMenu = () => {
   FullScreenMenu.style.display = 'block';
   document.body.style.overflow = "hidden";
-}
+};
 })();
 (function() {
   
@@ -218,6 +217,7 @@ function init() {
   for (var i = 0; i < coords.length; i++) {
     myCollection.add(new ymaps.Placemark(coords[i]));
   }
+  
   map.geoObjects.add(myCollection);
   if (myCollection.getLength() == 1) {
     map.setCenter(
@@ -258,9 +258,9 @@ $(document).ready(() => {
         }
       }
       element.closest('.sct-menu__item').classList.toggle('sct-menu__item--active');
-    })
+    });
   }
-})
+});
 })();
 
 (function() {
@@ -292,7 +292,7 @@ const scrollFunc = (sectionNumber) => {
     resetActiveClassForItem(sideBarItem, sectionNumber, 'sidebar__item--active');
 
   }, sectionTransitionTime + mouseInertiaTime);    
-}
+};
 
 const countSectionPosition = (sectionNumber) => {
 
@@ -304,11 +304,11 @@ const countSectionPosition = (sectionNumber) => {
   }
 
   return sectionPosition;
-}
+};
 
 const resetActiveClassForItem = (item, itemEq, activeClass) => {
   item.eq(itemEq).addClass(activeClass).siblings().removeClass(activeClass);
-}
+};
 
 const changeSidebarColor = (sectionNumber) => {
   const currentSection = section.eq(sectionNumber);
@@ -321,7 +321,7 @@ const changeSidebarColor = (sectionNumber) => {
 
     sideBar.removeClass('sidebar--color--grey')
   }
-}
+};
 
 const newPositionDetector = () => {
   const activeSection = section.filter('.active');
@@ -340,7 +340,7 @@ const newPositionDetector = () => {
       }
     }
   }
-}
+};
 
 $(window).on('wheel', (e) => {
   const deltaY = e.originalEvent.deltaY;
@@ -353,7 +353,7 @@ $(window).on('wheel', (e) => {
   if (deltaY < 0) {
     scroller.prev();
   }
-})
+});
 
 $(window).on('keydown', (e) => {
 
@@ -372,7 +372,7 @@ $(window).on('keydown', (e) => {
       scroller.prev();
       break;
   }
-})
+});
 
 $('[data-scroll-to]').click(e => {
   e.preventDefault();
@@ -382,7 +382,7 @@ $('[data-scroll-to]').click(e => {
   const targetSection = $(`[data-section-id=${target}]`);
 
   scrollFunc(targetSection.index());
-})
+});
 
 
 //https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
@@ -424,7 +424,7 @@ if (isMobile) {
 (function() {
 
 const findBlock = (target) => {
-   return $('.review').filter((ndx, item) => {
+  return $('.review').filter((ndx, item) => {
     return $(item).attr('data-slide') === target;
   });
 };
@@ -439,7 +439,7 @@ $('.interactive-avatar__link').click(e => {
 
   slidetoShow.addClass('review--active').siblings().removeClass('review--active');
   currentAvatar.addClass('interactive-avatar--active').siblings().removeClass('interactive-avatar--active');
-})
+});
 })();
 
 
@@ -503,7 +503,7 @@ for (let i = 0; i < sliderBtn.length; i++) {
   });
 }
 
-$('.slider__btn').click(e => e.preventDefault())
+$('.slider__btn').click(e => e.preventDefault());
 
 })();
 //КОМАНДА (выпадающий текст - десктоп)
@@ -527,9 +527,9 @@ $(document).ready(() => {
           }
         }
       element.closest('.team__item').classList.toggle('team__item--active');
-    })
+    });
   }
-})
+});
 })();
 
 
@@ -560,7 +560,7 @@ durationControl.addEventListener('input', setVideoDuration);
 durationControl.min = 0;
 video.onloadedmetadata = function() {
   durationControl.max = video.duration * 1000;
-}
+};
 durationControl.value = 0;
 
 //нажатие кнопки вкл/выкл звука
@@ -592,7 +592,7 @@ function playStop() {
 
   } else {
     video.pause();
-    clearInterval(intervalId)
+    clearInterval(intervalId);
   }
 }
 

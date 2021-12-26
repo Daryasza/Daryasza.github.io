@@ -11,7 +11,7 @@ isName.addEventListener('keydown', function(event) {
   if (isDigit == true) {
     event.preventDefault();
   }
-})
+});
 
 //Проверка телефона (доступны только -, +, backspace, arrows и цифры)
 const inputPhone = document.querySelector('#inputPhone');
@@ -50,7 +50,7 @@ const validateField = (field) => {
     field.classList.remove('inputs__form--error');
     return true;
   }
-}
+};
 
 const validateForm = (input) => {
   let isValid = true
@@ -66,7 +66,7 @@ const validateForm = (input) => {
     }
   }
   return isValid;
-}
+};
 
 const sectionForm = document.querySelector('.section--form');
 const body = document.body; 
@@ -130,7 +130,7 @@ form.addEventListener('submit', e => {
       comment: input.comment.value,
       //сервер ждет значения поля email, не предусмотренного макетом, поэтому вставляю значение вручную
       to: 'my@email.com'
-    }
+    };
 
     const xhr = new XMLHttpRequest();
     xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
@@ -143,8 +143,7 @@ form.addEventListener('submit', e => {
         body.appendChild(successMessage);
         form.reset();
       } else {
-        body.appendChild(failureMessage);
-        
+        body.appendChild(failureMessage);  
         //в случае ошибки со стороны сервера, не очищаю содержимое формы для удобства отправки повторного запроса
       }
     });

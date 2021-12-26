@@ -18,8 +18,8 @@ $(document).ready(() => {
         }
       }
       element.closest('.sct-menu__item').classList.toggle('sct-menu__item--active');
-    })
+    });
   }
-})
+});
 })();
 

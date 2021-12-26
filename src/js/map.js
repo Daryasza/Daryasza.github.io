@@ -30,6 +30,7 @@ function init() {
   for (var i = 0; i < coords.length; i++) {
     myCollection.add(new ymaps.Placemark(coords[i]));
   }
+  
   map.geoObjects.add(myCollection);
   if (myCollection.getLength() == 1) {
     map.setCenter(
