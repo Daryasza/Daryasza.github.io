@@ -44,6 +44,9 @@ let step = soundControl.max / 1000;
 let percent = video.volume / step;
 soundControl.style.background = `linear-gradient(90deg, #E01F3D 0%, #E01F3D ${percent}%, #868686 ${percent}%)`;
 
+// переменная для хранения последнего состояния уровня звука
+let soundControlBfr = soundControl.value
+
 //окончание видео
 video.addEventListener('ended', endOfVideo);
 
@@ -81,10 +84,9 @@ function updateDuration() {
 
 
 function soundOff() {
-
   if (video.volume === 0) {
-    video.volume = soundLevel;
-    soundControl.value = soundLevel * 10;
+    soundControl.value = soundControlBfr;
+    video.volume = soundControl.value / 10;
     soundBtn.classList.remove('video__sound-btn--active');
 
     let step = soundControl.max / 1000;
@@ -92,8 +94,8 @@ function soundOff() {
     soundControl.style.background = `linear-gradient(90deg, #E01F3D 0%, #E01F3D ${percent}%, #868686 ${percent}%)`;
 
   } else {
-    soundLevel = video.volume;
     video.volume = 0;
+    soundControlBfr = soundControl.value;
     soundControl.value = 0;
     soundBtn.classList.add('video__sound-btn--active');
     soundControl.style.background = `#868686`;
