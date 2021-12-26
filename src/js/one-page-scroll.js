@@ -24,7 +24,7 @@ const scrollFunc = (sectionNumber) => {
 
   setTimeout(() => {
     inMove = false
-    resetActiveClassForItem(sideBarItem,sectionNumber, 'sidebar__item--active');
+    resetActiveClassForItem(sideBarItem, sectionNumber, 'sidebar__item--active');
 
   }, sectionTransitionTime + mouseInertiaTime);    
 }
@@ -34,7 +34,7 @@ const countSectionPosition = (sectionNumber) => {
   sectionPosition = sectionNumber * -100;
 
   if (isNaN(sectionPosition)) {
-    console.error('передано не верное значение в countSectionPosition');
+    console.error('не верное значение в countSectionPosition');
     return 0;
   }
 

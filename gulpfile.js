@@ -16,11 +16,13 @@ const {SRC_PATH, DIST_PATH, STYLE_LIBS, JS_LIBS} = require('./gulp.config');
 
 
 task('clean', () => {
+  console.log(env );
   return src( `${DIST_PATH}/**/*`, { read: false }).pipe( rm() )
 })
 
 task('copy:html', () => {
-  return src(`${SRC_PATH}/*.html`).pipe(dest(DIST_PATH));
+  return src(`${SRC_PATH}/*.html`)
+  .pipe(dest(DIST_PATH));
 })
 
 task('copy:img', () => {
@@ -61,7 +63,7 @@ task('scripts', () => {
 task('server', () => {
   browserSync.init({
     server: {
-      baseDir: "./dist"
+      baseDir: "./src"
     },
     open: false
   });
@@ -80,4 +82,10 @@ task('default',
   parallel('copy:html','copy:img','copy:video', 'styles', 'scripts'), 
   parallel('watch','server')
   )
+);
+
+task('build',
+ series(
+   'clean',
+   parallel('copy:html', 'copy:img','copy:video', 'styles', 'scripts'))
 );
