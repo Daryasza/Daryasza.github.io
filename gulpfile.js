@@ -47,7 +47,7 @@ task('styles', ()=> {
 });
 
 task('scripts', () => {
-  return src(JS_LIBS.concat(['src/js/*.js']))
+  return src(JS_LIBS.concat(['src/js/*.js', '!src/js/main.js']))
   .pipe(gulpif(env === 'dev', sourcemaps.init()))
   .pipe(concat('main.js', {newLine: ';'}))
   .pipe(gulpif(env === 'prod', babel({

@@ -7,7 +7,7 @@ function init() {
   var map = new ymaps.Map("map", {
 
     center: [55.74882631, 37.59754130],
-    zoom: 14,
+    zoom: 13,
     controls: []
   });
 
@@ -45,7 +45,6 @@ function init() {
   if (new MobileDetect(window.navigator.userAgent).mobile()) {
     map.behaviors.disable('drag');
   }
-    
 };
 
 ymaps.ready(init);

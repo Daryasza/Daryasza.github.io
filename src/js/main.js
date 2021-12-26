@@ -286,11 +286,10 @@ const scrollFunc = (sectionNumber) => {
   });
   resetActiveClassForItem(section, sectionNumber, 'active');
   changeSidebarColor(sectionNumber);
+  resetActiveClassForItem(sideBarItem, sectionNumber, 'sidebar__item--active');
 
   setTimeout(() => {
     inMove = false
-    resetActiveClassForItem(sideBarItem, sectionNumber, 'sidebar__item--active');
-
   }, sectionTransitionTime + mouseInertiaTime);    
 };
 
