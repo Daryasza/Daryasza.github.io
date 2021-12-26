@@ -42,7 +42,7 @@ task('styles', ()=> {
   })))
   .pipe(gulpif(env === 'prod', gcmq()))
   .pipe(gulpif(env === 'prod', cleanCSS()))
-  .pipe(dest(DIST_PATH + "/css"))
+  .pipe(dest(DIST_PATH + "/styles"))
   .pipe(browserSync.reload({ stream: true }));
 });
 
