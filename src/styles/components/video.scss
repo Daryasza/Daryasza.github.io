@@ -159,6 +159,10 @@ video[poster]{
   width: convert(30px);
   height: convert(20px);
 
+  @include tablet {
+    width: convert(50px);
+  }
+
 
   &:before {
     content: '';
@@ -168,12 +172,17 @@ video[poster]{
     border-radius: convert(1px);
     position: absolute;
     display: block;
-    left: 4px;
+    left: 6px;
     top: 60%;
     transform: translateY(-50%) rotate(-40deg);
     z-index: 2;
     opacity: 0;
     transition: opacity .3s;
+
+    @include tablet {
+      width: convert(22px);
+      left: 12px;
+    }
   }
 
   &--active {
@@ -182,6 +191,12 @@ video[poster]{
     }
   }
 } 
+
+.video__soundic {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 
 .video__sound-wrapper {
   display: flex;

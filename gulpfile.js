@@ -42,6 +42,7 @@ task('styles', ()=> {
   })))
   .pipe(gulpif(env === 'prod', gcmq()))
   .pipe(gulpif(env === 'prod', cleanCSS()))
+  .pipe(gulpif(env === 'dev', dest(SRC_PATH + "/styles")))
   .pipe(dest(DIST_PATH + "/styles"))
   .pipe(browserSync.reload({ stream: true }));
 });
@@ -55,6 +56,7 @@ task('scripts', () => {
   })))
   .pipe(gulpif(env === 'prod', uglify()))
   .pipe(gulpif(env === 'dev', sourcemaps.write()))
+  .pipe(gulpif(env === 'dev', dest(SRC_PATH + "/js")))
   .pipe(dest(DIST_PATH + "/js"))
   .pipe(browserSync.reload({ stream: true }));
 });

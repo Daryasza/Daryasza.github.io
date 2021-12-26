@@ -84,21 +84,21 @@ function updateDuration() {
 
 
 function soundOff() {
-
   if (video.volume === 0) {
     soundControl.value = soundControlBfr;
-    video.volume = soundControl.value / 10;
-    soundBtn.classList.remove('video__sound-btn--active');
-
+    // Not working on iOS (video.volume is read-only and always =1)
+    // https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/Device-SpecificConsiderations/Device-SpecificConsiderations.html
+    video.volume = soundControlBfr / 10;
+    soundBtn.classList.toggle('video__sound-btn--active');
     let step = soundControl.max / 1000;
     let percent = video.volume / step;
     soundControl.style.background = `linear-gradient(90deg, #E01F3D 0%, #E01F3D ${percent}%, #868686 ${percent}%)`;
 
   } else {
-    video.volume = 0;
     soundControlBfr = soundControl.value;
+    video.volume = 0;
     soundControl.value = 0;
-    soundBtn.classList.add('video__sound-btn--active');
+    soundBtn.classList.toggle('video__sound-btn--active');
     soundControl.style.background = `#868686`;
   }
 }
