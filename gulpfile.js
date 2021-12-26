@@ -16,7 +16,6 @@ const {SRC_PATH, DIST_PATH, STYLE_LIBS, JS_LIBS} = require('./gulp.config');
 
 
 task('clean', () => {
-  console.log(env );
   return src( `${DIST_PATH}/**/*`, { read: false }).pipe( rm() )
 })
 
