@@ -31,7 +31,7 @@ const scrollFunc = (sectionNumber) => {
 
 const countSectionPosition = (sectionNumber) => {
 
-  sectionPosition = sectionNumber * -100;
+  const sectionPosition = sectionNumber * -100;
 
   if (isNaN(sectionPosition)) {
     console.error('не верное значение в countSectionPosition');
