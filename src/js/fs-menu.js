@@ -32,4 +32,4 @@ const openFullScreenMenu = () => {
   FullScreenMenu.style.display = 'block';
   document.body.style.overflow = "hidden";
 }
-})()
+})();

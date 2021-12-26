@@ -57,4 +57,4 @@ for (let i = 0; i < sliderBtn.length; i++) {
 
 $('.slider__btn').click(e => e.preventDefault())
 
-})()
+})();

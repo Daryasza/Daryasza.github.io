@@ -126,4 +126,4 @@ function endOfVideo() {
   video.load();
 }
 
-})()
+})();

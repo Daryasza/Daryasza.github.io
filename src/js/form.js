@@ -150,4 +150,4 @@ form.addEventListener('submit', e => {
     });
   }
 });
-})()
+})();

@@ -150,7 +150,8 @@ form.addEventListener('submit', e => {
     });
   }
 });
-})()//ПОЛНОЭКРАННОЕ МЕНЮ 
+})();
+//ПОЛНОЭКРАННОЕ МЕНЮ 
 //Логика перехода от ссылки к нужной секции страницы прописана в файле one-page-scroll.js и подтянута через data-атрибуты html.
 (function() {
 const hamburgerFullScreenMenu = document.querySelector('#hamburger')
@@ -184,7 +185,8 @@ const openFullScreenMenu = () => {
   FullScreenMenu.style.display = 'block';
   document.body.style.overflow = "hidden";
 }
-})()(function() {
+})();
+(function() {
   
 let map;
 
@@ -235,7 +237,8 @@ function init() {
 
 ymaps.ready(init);
 
-})()(function() {
+})();
+(function() {
 
 const menuBtn = $('.sct-menu__block');
 
@@ -258,7 +261,8 @@ $(document).ready(() => {
     })
   }
 })
-})()
+})();
+
 (function() {
 
 const section = $('.section');
@@ -408,7 +412,8 @@ if (isMobile) {
     }
   });
 }
-})()
+})();
+
 
 
 
@@ -435,7 +440,8 @@ $('.interactive-avatar__link').click(e => {
   slidetoShow.addClass('review--active').siblings().removeClass('review--active');
   currentAvatar.addClass('interactive-avatar--active').siblings().removeClass('interactive-avatar--active');
 })
-})()
+})();
+
 
 
 
@@ -499,7 +505,7 @@ for (let i = 0; i < sliderBtn.length; i++) {
 
 $('.slider__btn').click(e => e.preventDefault())
 
-})()
+})();
 //КОМАНДА (выпадающий текст - десктоп)
 
 (function() {
@@ -524,7 +530,8 @@ $(document).ready(() => {
     })
   }
 })
-})()
+})();
+
 
 (function() {
 
@@ -654,4 +661,4 @@ function endOfVideo() {
   video.load();
 }
 
-})()
+})();

@@ -17,7 +17,8 @@ $('.interactive-avatar__link').click(e => {
   slidetoShow.addClass('review--active').siblings().removeClass('review--active');
   currentAvatar.addClass('interactive-avatar--active').siblings().removeClass('interactive-avatar--active');
 })
-})()
+})();
+
 
 
 
