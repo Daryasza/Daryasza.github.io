@@ -84,6 +84,7 @@ function updateDuration() {
 
 
 function soundOff() {
+
   if (video.volume === 0) {
     soundControl.value = soundControlBfr;
     video.volume = soundControl.value / 10;
