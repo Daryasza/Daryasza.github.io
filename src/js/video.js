@@ -50,14 +50,10 @@ let soundControlBfr = soundControl.value
 // Video end event
 video.addEventListener('ended', endOfVideo);
 
-
-
 function playStop() {
-
   if (video.paused) {
     video.play();
     intervalId = setInterval(updateDuration, 10);
-
   } else {
     video.pause();
     clearInterval(intervalId);
