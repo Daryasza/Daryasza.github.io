@@ -1,5 +1,6 @@
-//ПОЛНОЭКРАННОЕ МЕНЮ 
-//Логика перехода от ссылки к нужной секции страницы прописана в файле one-page-scroll.js и подтянута через data-атрибуты html.
+// FULLSCREEN MENU
+// The logic for navigating from a link to the corresponding section of the page 
+// is written in the file one-page-scroll.js and retrieved via data attributes in HTML.
 (function() {
 const hamburgerFullScreenMenu = document.querySelector('#hamburger');
 const xFullScreenMenu = document.querySelector('#FSmenuClose');
@@ -11,14 +12,12 @@ hamburgerFullScreenMenu.addEventListener('click', function(element){
   
   xFullScreenMenu.addEventListener('click', function(element){
     element.preventDefault();
-
     closeFullScreenMenu();
   });
 });
 
 FSmenuItem.forEach(element => {
   element.addEventListener('click', e => {
-
     closeFullScreenMenu();
   });
 });
