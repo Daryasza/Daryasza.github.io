@@ -2,7 +2,7 @@
 
 ## Description 
 
-One-page-scroll website with the majority of website animation techniques realized. The website is published at [GitHub Pages](daryasza.github.io/beats_solo_3/src/). The backend part was developed by LoftShool and located at `https://webdev-api.loftschool.com/sendmail`
+One-page-scroll website with the majority of website animation techniques realized. The website is published at [GitHub Pages](https://daryasza.github.io/beats_solo3/src/). The backend part was developed by LoftShool and located at `https://webdev-api.loftschool.com/sendmail`
 
 
 ### Slider and drop-downs: 
