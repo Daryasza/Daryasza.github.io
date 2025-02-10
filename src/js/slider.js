@@ -1,4 +1,3 @@
-// СЛАЙДЕР 
 (function() {
 
 const slider = document.querySelector('.slider__list');
