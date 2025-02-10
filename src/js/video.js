@@ -9,16 +9,16 @@ const playBtn = document.querySelector('.video__play-btn');
 const playBtnB = document.querySelector('.video__btn-playB');
 const soundBtn = document.querySelector('.video__sound-btn');
 
-//play/pause события (для мобильных плееров)
+// Play/Pause events (for mobile players)
 video.addEventListener('pause', invertVideoBtns);
 video.addEventListener('play', invertVideoBtns);
 
-//нажатие на ключевые точки видео
+// Clicking on key points of the video
 video.addEventListener('click', playStop);
 playBtnB.addEventListener('click', playStop);
 playBtn.addEventListener('click', playStop);
 
-//изменение ползунка проигрывания видео
+// Changing the video playback slider
 durationControl = document.getElementById('durationLevel');
 durationControl.addEventListener('input', setVideoDuration);
 
@@ -28,26 +28,26 @@ video.onloadedmetadata = function() {
 };
 durationControl.value = 0;
 
-//нажатие кнопки вкл/выкл звука
+// Clicking the mute/unmute button
 let micControl = document.getElementById("soundOff/On");
 micControl.addEventListener('click', soundOff);
 
-//изменение ползунка звука
+// Changing the volume slider
 soundControl = document.getElementById('sound-level');
 soundControl.addEventListener('input', changeSoundVolume);
 soundControl.min = 0;
 soundControl.max = 10;
 
-//значения звука по умолчанию
+// Default volume values
 soundControl.value = soundControl.max;
 let step = soundControl.max / 1000;
 let percent = video.volume / step;
 soundControl.style.background = `linear-gradient(90deg, #E01F3D 0%, #E01F3D ${percent}%, #868686 ${percent}%)`;
 
-// переменная для хранения последнего состояния уровня звука
+// Variable to store the last volume level
 let soundControlBfr = soundControl.value
 
-//окончание видео
+// Video end event
 video.addEventListener('ended', endOfVideo);
 
 
